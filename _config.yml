@@ -33,7 +33,7 @@ author:
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=2GjI4oMAAAAJ&hl=en"
-  linkedin         : "https://www.linkedin.com/in/yashar-kiarashinejad/"
+  # linkedin         : "https://www.linkedin.com/in/yashar-kiarashinejad/"
   orcid            : "https://orcid.org/0009-0004-4903-6298"
   semantic         : # URL
   pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=yashar+kiarashi"
@@ -44,7 +44,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "YashKia"
+  # github           : "YashKia"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "yashar-kiarashinejad"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
