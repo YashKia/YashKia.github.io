@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "♣"
+title                    : "♣ about me"
 title_separator          : "-"
 name                     : &name ""
 description              : &description "personal description"
