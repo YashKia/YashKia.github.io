@@ -17,8 +17,8 @@ main:
   # - title: "Research"
   #   url: /portfolio/
         
-  - title: "News"
-    url: /year-archive/
+  # - title: "News"
+  #   url: /year-archive/
     
   # - title: "CV"
   #   url: /cv/
