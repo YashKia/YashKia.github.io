@@ -13,4 +13,4 @@ Over the past three years, I have focused on exploring novel biomarkers for neur
 
 Before starting my postdoctoral research at [Emory](https://www.emory.edu/home/index.html), I earned my PhD from [Georgia Tech](https://www.gatech.edu). During my PhD, I introduced new approaches for knowledge discovery in nanophotonics through dimensionality reduction. My research accelerated the design of nanoscale sensors by utilizing artificial intelligence to better understand nuanced patterns in light-matter interaction.
 
-My long-term goal is to pioneer the discovery of novel health biomarkers through cutting-edge wearable technologies, building upon the work featured in my recent publications as a foundation for the next phase of my career.
+My long-term goal is to pioneer the discovery of novel health biomarkers for neurodiverse populations through cutting-edge wearable technologies, building upon the work featured in my recent publications as a foundation for the next phase of my career.
