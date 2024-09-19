@@ -222,6 +222,10 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  research:                 # Add this
+    output: true            # Ensures research content is included in the site
+    permalink: /research/:path/  # Defines how research pages are generated
+
 
 
 # These settings control how pages and collections are included in the site
