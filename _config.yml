@@ -208,6 +208,7 @@ kramdown:
   enable_coderay: false
 
 
+
 # These settings control the types of collections used by the template
 collections:
   teaching:
@@ -216,7 +217,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  research:
+  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
