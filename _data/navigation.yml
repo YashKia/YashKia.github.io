@@ -7,6 +7,6 @@
 main:
   - title: "Research"
     url: /research/
-    children:
-      - title: "Autism Research"
-        url: /research/autism.md
+  - title: "Autism Research"
+    url: /research/autism.md
+
