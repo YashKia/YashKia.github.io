@@ -216,15 +216,12 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  research:
     output: true
     permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
-  research:                 # Add this
-    output: true            # Ensures research content is included in the site
-    permalink: /:collection/:path/  # Defines how research pages are generated
 
 
 
