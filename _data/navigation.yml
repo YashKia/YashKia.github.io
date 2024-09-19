@@ -9,4 +9,4 @@ main:
     url: /research/
     children:
       - title: "Autism Research"
-        url: /research/autism.md
+        url: /autism.md
