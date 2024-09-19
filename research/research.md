@@ -6,10 +6,10 @@ title: "Research"
 
 ## Projects
 
-{% include_relative autism.md %}
+{% include autism.md %}
 
 ---
 
-{% include_relative project2.md %}
+{% include project2.md %}
 
 ---
