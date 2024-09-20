@@ -6,7 +6,7 @@ title: ""
 <div style="width: 60%; margin: 0 auto;">
 
   <!-- Title aligned with the rest of the text -->
-  <h2 style="font-size: 2em; text-align: left; margin-bottom: 20px;">Explainable AI for Predicting Adverse Behaviors in Autism Spectrum Disorder</h2>
+  <h2 style="font-size: 2em; text-align: left; margin-bottom: 20px;">Explainable AI for Predicting Adverse Behaviors in Autism Spectrum Disorder Using Nonintrusive Sleep Monitoring</h2>
   
   <div style="text-align:center;">
       <img src="/images/Autism_RF.png" alt="Research Figure" style="width:100%; height:auto; margin-bottom:20px; border: 1px solid #ddd; padding: 10px;">
