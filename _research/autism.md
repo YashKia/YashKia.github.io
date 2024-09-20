@@ -13,10 +13,6 @@ title: ""
   </div>
 
   <p style="line-height: 1.6; text-align: justify; margin-bottom: 20px;">
-  By leveraging unique data we have collected over the last nine years, we have developed preliminary novel AI models to predict ASD-related high-risk behaviors and medical events such as self-injury and seizures through innovative off-body sleep sensing and medical record mining.
-  </p>
-
-  <p style="line-height: 1.6; text-align: justify; margin-bottom: 20px;">
   Developing AI models that analyze the dynamics of sleep and daytime behavior, this research aims to predict adverse behaviors in individuals with ASD by understanding their underlying physiological and psychological states. In collaboration with the <a href="https://thecenterfordiscovery.org/about-us/" target="_blank">The Center for Discovery</a>, the project seeks to create an open-source tool for proactive interventions, reducing high-risk behaviors and improving care for individuals with ASD.
   </p>
 
@@ -27,9 +23,6 @@ title: ""
     </li>
     <li>
       <strong>Kiarashi, Y.</strong>, Lantz, J., Reyna, M.A., Anderson, C., Rad, A.B., Foster, J., Villavicencio, T., Hamlin, T. and Clifford, G.D., 2024. Forecasting High-Risk Behavioral and Medical Events in Children with Autism through Analysis of Digital Behavioral Records. medRxiv. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11100855/">Link</a>
-    </li>
-    <li>
-      <strong>Kiarashi, Y.</strong>, Lantz, J., Reyna, M.A., Anderson, C., Rad, A.B., Foster, J., Villavicencio, T., Hamlin, T. and Clifford, G.D., 2024. Forecasting High-Risk Behavioral and Medical Events in Children with Autism through Analysis of Digital Behavioral Records. IEEE Journal of Biomedical and Health Informatics. <a href="https://ieeexplore.ieee.org/abstract/document/10669162">Link</a>
     </li>
   </ul>
 
