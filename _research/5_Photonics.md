@@ -6,10 +6,10 @@ title: ""
 <div style="width: 60%; margin: 0 auto;">
 
   <!-- Title aligned with the rest of the text -->
-  <h2 style="font-size: 2em; text-align: left; margin-bottom: 20px;">XAI-Driven Knowledge Discovery in Nanophotonics</h2>
+  <h2 style="font-size: 2em; text-align: left; margin-bottom: 20px;">Knowledge Discovery in Nanophotonics</h2>
   
   <div style="text-align:center;">
-      <img src="/images/Photonics.png" alt="Research Figure" style="width:100%; height:auto; margin-bottom:20px; border: 1px solid #ddd; padding: 10px;">
+      <img src="/images/Photonics_RF.png" alt="Research Figure" style="width:100%; height:auto; margin-bottom:20px; border: 1px solid #ddd; padding: 10px;">
   </div>
 
   <p style="line-height: 1.6; text-align: justify; margin-bottom: 20px;">
