@@ -1,6 +1,6 @@
 # Research: AI-Driven Prediction of ASD-Related High-Risk Behaviors
 
-![Research Figure](path_to_your_image.png)  
+![Research Figure](Autism_RF.png)  
 *Figure 1: Off-body sleep sensing for ASD-related high-risk behavior prediction.*
 
 ## Description
