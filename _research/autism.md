@@ -13,5 +13,4 @@ This ongoing research is a collaboration with the **Center For Discovery (CFD)**
 2. *[Title of Publication 2](link_to_publication_2)*
 3. *[Title of Publication 3](link_to_publication_3)*
 
-*(Additional publications can be added here as the research progresses.)*
 
