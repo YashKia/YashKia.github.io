@@ -11,9 +11,8 @@ title: ""
   <div style="text-align:center;">
       <img src="/images/Autism_RF.png" alt="Research Figure" style="width:100%; height:auto; margin-bottom:20px; border: 1px solid #ddd; padding: 10px;">
   </div>
-  <p style="text-align: center;"><em>Figure 1: Off-body sleep sensing for ASD-related high-risk behavior prediction.</em></p>
 
-  ## Description
+
   <p style="line-height: 1.6; text-align: justify; margin-bottom: 20px;">
   By leveraging unique data we have collected over the last nine years, we have developed preliminary novel AI models to predict ASD-related high-risk behaviors and medical events such as self-injury and seizures through innovative off-body sleep sensing and medical record mining.
   </p>
