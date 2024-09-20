@@ -18,7 +18,7 @@ title: ""
   </p>
 
   <p style="line-height: 1.6; text-align: justify; margin-bottom: 20px;">
-  This ongoing research is a collaboration with the <strong>Center For Discovery (CFD)</strong> and aims to enhance early detection and intervention strategies for individuals with Autism Spectrum Disorder (ASD). Through advanced analysis of sleep patterns and historical medical data, we are building predictive models that offer significant potential for improving care and outcomes for individuals at risk.
+  Developing AI models that analyze the dynamics of sleep and daytime behavior, this research aims to predict adverse behaviors in individuals with ASD by understanding their underlying physiological and psychological states. In collaboration with the <a href="https://thecenterfordiscovery.org/about-us/" target="_blank">The Center for Discovery </a>, , the project seeks to create an open-source tool for proactive interventions, reducing high-risk behaviors and improving care for individuals with ASD.
   </p>
 
   ## Related Publications
