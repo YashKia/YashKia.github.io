@@ -1,6 +1,6 @@
 ---
-layout: 
-title: ""
+layout: research
+title: "AI-Driven Prediction of ASD-Related High-Risk Behaviors"
 ---
 
 <div style="width: 60%; margin: 0 auto;">
