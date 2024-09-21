@@ -7,21 +7,11 @@ permalink: /publications/
 <div class="publications-list" style="margin-left: 100px;"> <!-- Increased the left margin -->
   <h1>{{ page.title }}</h1>
 
-  {% for publication in site.publications %}
+  {% assign sorted_publications = site.publications | sort: 'year' | reverse %} <!-- Sort publications by year in descending order -->
+
+  {% for publication in sorted_publications %}
     <div class="publication-item" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin-bottom: 20px; border-radius: 8px;">
-      <h2>{{ publication.title }}</h2>
-      <p>{{ publication.excerpt }}</p>
-
       {{ publication.content | markdownify }} <!-- This renders the full content of each markdown file -->
-
-      {% if publication.related_publications %}
-        <h3>Related Publications</h3>
-        <ul>
-          {% for pub in publication.related_publications %}
-            <li>{{ pub }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
     </div>
     <hr>
   {% endfor %}
