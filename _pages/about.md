@@ -22,4 +22,4 @@ Looking ahead, my goal is to discover new health biomarkers for neurodiverse pop
 
 ## News
 
-- **[July 2024]** Yashar has been awarded the Thrasher Research Fund Early Career Award for the project titled "Enhancing Behavioral Understandings and Interventions in Children with Autism Spectrum Disorder using Artificial Intelligence." More details can be found [here](https://www.thrasherresearch.org/grant/02384?lang=eng).
+- **[July 2024]** Yashar has been awarded the **Thrasher Research Fund Early Career Award** for the project titled "**Enhancing Behavioral Understandings and Interventions in Children with Autism Spectrum Disorder using Artificial Intelligence.**" More details can be found [here](https://www.thrasherresearch.org/grant/02384?lang=eng).
