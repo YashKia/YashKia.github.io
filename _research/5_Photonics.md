@@ -17,7 +17,7 @@ title: ""
   </p>
 
   <p style="line-height: 1.6; text-align: justify; margin-bottom: 20px;">
-  By employing manifold learning, we reduced the complexity of the inverse design problem while preserving key information. This enabled the discovery of optimal nanostructures with minimal geometrical complexity, resulting in innovative methods such as all-optical neuro-inspired computing frameworks and nanoscale sensors.
+  By employing manifold learning, we reduced the complexity of the inverse design problem while preserving key information. This enabled the discovery of optimal nanostructures with minimal geometrical complexity, resulting in innovative methods to accelerate designing all-optical neuro-inspired computing frameworks and nanoscale biosensors.
   </p>
 
   <h3>Related Publications</h3>
