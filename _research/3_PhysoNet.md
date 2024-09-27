@@ -19,6 +19,9 @@ title: ""
   <h3>Related Publications</h3>
   <ul style="line-height: 1.6; margin-bottom: 20px;">
     <li>
+      Reyna, M.A., Deepanshi, Weigle, J., Koscova, Z., Campbell, K., Kodthalu Shivashankara, K., Saghafi, S., Nikookar, S., Motie-Shirazi, M., <strong>Kiarashi, Y.</strong>, Seyedi, S., Clifford, G.D. & Sameni, R., 2024. ECG-Image-Database: A Dataset of ECG Images with Real-World Imaging and Scanning Artifacts; A Foundation for Computerized ECG Image Digitization and Analysis. <i>arXiv</i>. <a href="https://arxiv.org/abs/2409.16612">Link</a>
+    </li>
+    <li>
       Reyna, M.A., <strong>Kiarashi, Y.</strong>, Elola, A., Oliveira, J., Renna, F., Gu, A., Perez-Alday, E.A., Sadr, N., Sharma, A., Mattos, S. and Coimbra, M.T., 2022. Heart murmur detection from phonocardiogram recordings: The George B. Moody PhysioNet Challenge 2022. <i>medRxiv</i>, 11, p.278688. <a href="https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000324">Link</a>
     </li>
     <li>
