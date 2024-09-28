@@ -25,8 +25,8 @@ author:
   name             : "Yashar Kiarashi"
   pronouns         : # example: "she/her"  
   bio              : "Post Doctoral Fellow"
-  location         : "[Atlanta](https://en.wikipedia.org/wiki/Atlanta)"
-  employer         : "[Emory University](https://www.emory.edu)"
+  location         : "<a href='https://en.wikipedia.org/wiki/Atlanta' target='_blank'>Atlanta</a>"
+  employer         : "<a href='https://www.emory.edu' target='_blank'>Emory University</a>"
   uri              : # URL
   email            : "yash@dbmi.emory.edu" 
 
