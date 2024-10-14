@@ -23,4 +23,6 @@ Looking ahead, my goal is to discover new health biomarkers for neurodiverse pop
 
 ## News
 
+- [October 2024] Our paper titled "**Off-body Sleep Analysis for Predicting Adverse Behavior in Individuals with Autism Spectrum Disorder**" has been published in **IEEE Journal of Biomedical and Health Informatics**. You can access it [here](https://ieeexplore.ieee.org/abstract/document/10669162).
+
 - [July 2024] Yashar has been awarded the **Thrasher Research Fund Early Career Award** for the project titled "**Enhancing Behavioral Understandings and Interventions in Children with Autism Spectrum Disorder using Artificial Intelligence.**" More details can be found [here](https://www.thrasherresearch.org/grant/02384?lang=eng).
