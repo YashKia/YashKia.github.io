@@ -22,7 +22,8 @@ Looking ahead, my goal is to discover new health biomarkers for neurodiverse pop
 
 
 ## News
-- [February 2025] Our paper titled "**Feasibility of Assessing Cognitive Impairment via Distributed Camera Network and Privacy‐Preserving Edge Computing **Alzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring**. [link](https://pmc.ncbi.nlm.nih.gov/articles/PMC11848627/)
+- [February 2025] Our paper titled "**Feasibility of Assessing Cognitive Impairment via Distributed Camera Network and Privacy‐Preserving Edge Computing**" has been published in **Alzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring**. [link](https://pmc.ncbi.nlm.nih.gov/articles/PMC11848627/)
+  
 - [February 2025] Yashar Presented at CTSA Lunch and Learn Series on "**Can Sleep Architecture and Behavior Patterns Predict Next-Day Challenging Behavior in Autism?**"
 
 - [January 2025] Our paper titled "**From Motion to Emotion: Exploring Challenging Behaviors in Autism Spectrum Disorder Through Analysis of Wearable Physiology and Movement**" has been published in **Physiological Measurements**. [link](https://iopscience.iop.org/article/10.1088/1361-6579/ada51b/meta)
