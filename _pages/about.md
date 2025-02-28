@@ -22,7 +22,13 @@ Looking ahead, my goal is to discover new health biomarkers for neurodiverse pop
 
 
 ## News
+- [February 2025] Our paper titled "**Feasibility of Assessing Cognitive Impairment via Distributed Camera Network and Privacy‐Preserving Edge Computing **Alzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring**. [link](https://pmc.ncbi.nlm.nih.gov/articles/PMC11848627/)
+- [February 2025] Yashar Presented at CTSA Lunch and Learn Series on "**Can Sleep Architecture and Behavior Patterns Predict Next-Day Challenging Behavior in Autism? **"
 
-- [October 2024] Our paper titled "**Off-body Sleep Analysis for Predicting Adverse Behavior in Individuals with Autism Spectrum Disorder**" has been published in **IEEE Journal of Biomedical and Health Informatics**. You can access it [here](https://ieeexplore.ieee.org/abstract/document/10669162).
+- [January 2025] Our paper titled "**From Motion to Emotion: Exploring Challenging Behaviors in Autism Spectrum Disorder Through Analysis of Wearable Physiology and Movement**" has been published in **Physiological Measurements**. [link](https://iopscience.iop.org/article/10.1088/1361-6579/ada51b/meta)
+
+- [November 2024] Yashar Presented at NeuroNext Postdoc Seminar on "**Advancing Neurological Care Through Novel Sensing Pipelines for Detection and Intervention**"
+
+- [October 2024] Our paper titled "**Off-body Sleep Analysis for Predicting Adverse Behavior in Individuals with Autism Spectrum Disorder**" has been published in **IEEE Journal of Biomedical and Health Informatics**. [link](https://ieeexplore.ieee.org/abstract/document/10669162)
 
 - [July 2024] Yashar has been awarded the **Thrasher Research Fund Early Career Award** for the project titled "**Enhancing Behavioral Understandings and Interventions in Children with Autism Spectrum Disorder using Artificial Intelligence.**" More details can be found [here](https://www.thrasherresearch.org/grant/02384?lang=eng).
