@@ -19,7 +19,7 @@ title: ""
   <h3>Related Publications</h3>
   <ul style="line-height: 1.6; margin-bottom: 20px;">
     <li>
-      Hegde, C., <strong>Kiarashi, Y.</strong>, Levey, A.I., Rodriguez, A.D., Kwon, H. and Clifford, G.D., 2024. Feasibility of assessing cognitive impairment via distributed camera network and privacy-preserving edge computing. arXiv preprint arXiv:2408.10442. <a href="https://arxiv.org/abs/2408.10442">Link</a>
+      Hegde, C., <strong>Kiarashi, Y.</strong>, Levey, A.I., Rodriguez, A.D., Kwon, H. and Clifford, G.D., 2024. Feasibility of assessing cognitive impairment via distributed camera network and privacy-preserving edge computing. AAlzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring, 17(1), e70085. <a href="https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/dad2.70085">Link</a>
     </li>
     <li>
       <strong>Kiarashi, Y.</strong>, Saghafi, S., Das, B., Hegde, C., Madala, V.S.K., Nakum, A., Singh, R., Tweedy, R., Doiron, M., Rodriguez, A.D. and Levey, A.I., 2023. Graph Trilateration for Indoor Localization in Sparsely Distributed Edge Computing Devices in Complex Environments Using Bluetooth Technology. Sensors, 23(23), p.9517. <a href="https://www.mdpi.com/1424-8220/23/23/9517">Link</a>
