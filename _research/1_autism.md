@@ -22,7 +22,7 @@ title: ""
       <strong>Kiarashi, Y.</strong>, Suresha, P.B., Rad, A.B., Reyna, M.A., Anderson, C., Foster, J., Lantz, J., Villavicencio, T., Hamlin, T. and Clifford, G.D., 2024. Off-body Sleep Analysis for Predicting Adverse Behavior in Individuals with Autism Spectrum Disorder. IEEE Journal of Biomedical and Health Informatics. <a href="link_to_publication_1">Link</a>
     </li>
     <li>
-      <strong>Kiarashi, Y.</strong>, Lantz, J., Reyna, M.A., Anderson, C., Rad, A.B., Foster, J., Villavicencio, T., Hamlin, T. and Clifford, G.D., 2024. Forecasting High-Risk Behavioral and Medical Events in Children with Autism through Analysis of Digital Behavioral Records. medRxiv. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11100855/">Link</a>
+      <strong>Kiarashi, Y.</strong>, Lantz, J., Reyna, M.A., Anderson, C., Rad, A.B., Foster, J., Villavicencio, T., Hamlin, T. and Clifford, G.D., 2024. Predicting seizures episodes and high-risk events in autism through adverse behavioral patterns. <a href="https://pubmed.ncbi.nlm.nih.gov/38766049/">Link</a>
     </li>
      <li>
       Rad, A. B., Villavicencio, T., <strong>Kiarashi, Y.</strong>, Anderson, C., Foster, J., Kwon, H., Hamlin, T., Lantz, J. & Clifford, G. D., 2025 . From motion to emotion: exploring challenging behaviors in autism spectrum disorder through analysis of wearable physiology and movement. Physiological Measurement. <a href="[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11100855/](https://iopscience.iop.org/article/10.1088/1361-6579/ada51b/meta)">Link</a>
