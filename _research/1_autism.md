@@ -19,7 +19,7 @@ title: ""
   <h3>Related Publications</h3>
   <ul style="line-height: 1.6; margin-bottom: 20px;">
     <li>
-      <strong>Kiarashi, Y.</strong>, Suresha, P.B., Rad, A.B., Reyna, M.A., Anderson, C., Foster, J., Lantz, J., Villavicencio, T., Hamlin, T. and Clifford, G.D., 2024. Off-body Sleep Analysis for Predicting Adverse Behavior in Individuals with Autism Spectrum Disorder. IEEE Journal of Biomedical and Health Informatics. <a href="link_to_publication_1">Link</a>
+      <strong>Kiarashi, Y.</strong>, Suresha, P.B., Rad, A.B., Reyna, M.A., Anderson, C., Foster, J., Lantz, J., Villavicencio, T., Hamlin, T. and Clifford, G.D., 2024. Off-body Sleep Analysis for Predicting Adverse Behavior in Individuals with Autism Spectrum Disorder. IEEE Journal of Biomedical and Health Informatics. <a href="https://ieeexplore.ieee.org/abstract/document/10669162">Link</a>
     </li>
     <li>
       <strong>Kiarashi, Y.</strong>, Lantz, J., Reyna, M.A., Anderson, C., Rad, A.B., Foster, J., Villavicencio, T., Hamlin, T. and Clifford, G.D., 2024. Predicting seizures episodes and high-risk events in autism through adverse behavioral patterns. <a href="https://pubmed.ncbi.nlm.nih.gov/38766049/">Link</a>
