@@ -22,7 +22,7 @@ Looking ahead, my goal is to discover new health biomarkers for neurodiverse pop
 
 
 ## News
-- [April 2025] Yashar is invited to present at Profound Autism Summit "**Predicting High-Risk Behaviors in Individuals with Profound Autism Using Sleep and Other Environmental Factors**" [presentation link](https://behaviorlive.com/events/predicting-high-risk-behaviors-in-individuals-with-profound-autism-using-sleep-an). If you're interested in helping shape the mobile app, please <a href="https://docs.google.com/forms/d/1VyaFLWRc1fYyPufQz2fSF7NbG3wPcmH757xggiRhzfU/viewform" style="color:green;">share your input</a>.
+- - [April 2025] Yashar is invited to present at Profound Autism Summit "**Predicting High-Risk Behaviors in Individuals with Profound Autism Using Sleep and Other Environmental Factors**" [presentation link](https://behaviorlive.com/events/predicting-high-risk-behaviors-in-individuals-with-profound-autism-using-sleep-an). <span style="color:green;">Add your contact information [here](https://docs.google.com/forms/d/1VyaFLWRc1fYyPufQz2fSF7NbG3wPcmH757xggiRhzfU/viewform), and we’ll reach out to you for a quick survey.</span>
 
 
 - [February 2025] Our paper titled "**Feasibility of Assessing Cognitive Impairment via Distributed Camera Network and Privacy‐Preserving Edge Computing**" has been published in **Alzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring**. [link](https://pmc.ncbi.nlm.nih.gov/articles/PMC11848627/)
