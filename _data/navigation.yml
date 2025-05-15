@@ -9,5 +9,8 @@ main:
   - title: "Research"
     url: /research/
     
+  - title: "Play"
+    url: /play/
+    
   - title: "Contact"
     url: /contact/
