@@ -43,7 +43,21 @@ redirect_from:
       <li class="news-item">
         <span class="news-date">Apr 2025</span>
         <div class="news-content">
+          Yashar received the <strong>Excellence in Research Award</strong> from the Department of Biomedical Informatics at Emory University.
+        </div>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Apr 2025</span>
+        <div class="news-content">
           Yashar gave a talk in Profound Autism Summit "<strong>Predicting High-Risk Behaviors in Individuals with Profound Autism Using Sleep and Other Environmental Factors</strong>" <a href="https://behaviorlive.com/events/predicting-high-risk-behaviors-in-individuals-with-profound-autism-using-sleep-an">presentation link</a>
+        </div>
+      </li>
+      
+      <li class="news-item">
+        <span class="news-date">Mar 2025</span>
+        <div class="news-content">
+          Our paper titled "<strong>Predicting seizure episodes and high-risk events in autism through adverse behavioral patterns</strong>" has been published in <strong>Physiological Measurement</strong>. <a href="https://iopscience.iop.org/article/10.1088/1361-6579/adcafd/meta">Read paper</a>
         </div>
       </li>
       
