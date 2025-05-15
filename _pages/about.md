@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="about-container">
   <div class="research-overview">
-    <h2><span class="section-icon">◆</span> Research Overview</h2>
+    <h2><span class="section-icon">🔬</span> Research Overview</h2>
 
     <p style="text-align: justify;"> 
     As a postdoctoral researcher at the <a href="https://gdclifford.info/gari">Clifford Lab</a> at Emory University, my research focuses on developing novel AI-driven methods and sensing technologies to address critical challenges in healthcare, particularly for neurological and developmental disorders. My interdisciplinary approach combines expertise in artificial intelligence, biomedical sensing, and signal processing to create tools that can improve patient outcomes through early detection and personalized interventions.
@@ -19,17 +19,17 @@ redirect_from:
       <h3>Research Focus Areas</h3>
       
       <div class="research-area">
-        <h4><span class="area-icon">○</span> Novel Biomarkers for Neurological Disorders</h4>
+        <h4><span class="area-icon">🧠</span> Novel Biomarkers for Neurological Disorders</h4>
         <p>Working with the <a href="https://empowerment.emory.edu">Cognitive Empowerment Program</a> and the <a href="https://alzheimers.emory.edu">Goizueta Alzheimer's Disease Research Center</a>, I develop methods to identify cognitive markers in older adults at risk for Mild Cognitive Impairment using multimodal data from wearable technologies, including <a href="https://www.nextsense.io">NextSense in-ear EEG devices</a> and wristband health monitors.</p>
       </div>
       
       <div class="research-area">
-        <h4><span class="area-icon">△</span> Privacy-Preserving Sensing for Neurodevelopmental Disorders</h4>
+        <h4><span class="area-icon">🔐</span> Privacy-Preserving Sensing for Neurodevelopmental Disorders</h4>
         <p>In collaboration with <a href="https://thecenterfordiscovery.org">The Center for Discovery</a>, I am researching the relationship between sleep patterns and behavioral outcomes in children with autism spectrum disorder. This work involves building an end-to-end edge computing system using off-body sensors that prioritizes privacy while extracting meaningful behavioral insights.</p>
       </div>
       
       <div class="research-area">
-        <h4><span class="area-icon">□</span> AI-Driven Pattern Recognition for Health Monitoring</h4>
+        <h4><span class="area-icon">📊</span> AI-Driven Pattern Recognition for Health Monitoring</h4>
         <p>Building on my PhD research in knowledge discovery at Georgia Tech, I develop interpretable machine learning models for biomedical applications that can extract valuable insights from complex physiological data.</p>
       </div>
     </div>
@@ -38,7 +38,7 @@ redirect_from:
   </div>
 
   <div class="news-section">
-    <h2><span class="section-icon">◇</span> Recent News</h2>
+    <h2><span class="section-icon">📰</span> Recent News</h2>
     <ul class="news-list">
       <li class="news-item">
         <span class="news-date">May 2025</span>
@@ -117,8 +117,6 @@ redirect_from:
   
   .section-icon, .area-icon {
     margin-right: 0.5em;
-    color: var(--darker-purple);
-    font-size: 1.2em;
   }
   
   .research-overview {
