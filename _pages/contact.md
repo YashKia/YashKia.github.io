@@ -79,10 +79,12 @@ permalink: /contact/
 <style>
   /* Purple Color Spectrum */
   :root {
-    --light-purple: #BDB5D5;     /* Light purple for backgrounds */
+    --light-purple: #BDB5D5;     /* Light purple for backgrounds and decorative elements */
     --medium-purple: #9E95B7;    /* Medium purple for hover states */
-    --darker-purple: #7D6E96;    /* Darker purple for text for better readability */
+    --darker-purple: #7D6E96;    /* Darker purple for text and links */
     --darkest-purple: #4A3A69;   /* Darkest purple for emphasis */
+    --text-color: #333;          /* Black for regular text */
+    --light-text: #555;          /* Lighter black for secondary text */
   }
 
   .contact-container {
@@ -134,7 +136,7 @@ permalink: /contact/
   }
   
   .contact-card p {
-    color: #555;
+    color: var(--text-color);
     line-height: 1.6;
   }
   
@@ -170,7 +172,7 @@ permalink: /contact/
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #444;
+    color: var(--text-color);
     transition: transform 0.3s ease;
     width: 120px;
   }
@@ -206,7 +208,7 @@ permalink: /contact/
   
   .collaboration-list li {
     margin-bottom: 0.5em;
-    color: #555;
+    color: var(--text-color);
   }
   
   .contact-invitation {

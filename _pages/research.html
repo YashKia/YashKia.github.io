@@ -45,6 +45,8 @@ permalink: /research/
     --medium-purple: #9E95B7;    /* Medium purple for hover states */
     --darker-purple: #7D6E96;    /* Darker purple for text for better readability */
     --darkest-purple: #4A3A69;   /* Darkest purple for emphasis */
+    --text-color: #333;          /* Black for regular text */
+    --light-text: #555;          /* Lighter black for secondary text */
   }
 
   .research-container {
@@ -62,7 +64,7 @@ permalink: /research/
   
   .page-description {
     text-align: center;
-    color: #555;
+    color: var(--light-text);
     margin-bottom: 2em;
     font-size: 1.1em;
     max-width: 800px;
@@ -116,7 +118,7 @@ permalink: /research/
   }
   
   .research-item-content p {
-    color: #333;
+    color: var(--text-color);
     font-size: 1.05em;
     line-height: 1.6;
     margin-top: 0;
@@ -157,7 +159,7 @@ permalink: /research/
   
   .related-publications li {
     margin-bottom: 0.7em;
-    color: #444;
+    color: var(--text-color);
   }
   
   @media (max-width: 800px) {

@@ -6,6 +6,8 @@
   --medium-purple: #9E95B7;  /* Medium purple for hover states */
   --darker-purple: #7D6E96;  /* Darker purple for text and links */
   --darkest-purple: #4A3A69; /* Darkest purple for emphasis */
+  --text-color: #333;        /* Black for regular text content */
+  --light-text: #555;        /* Lighter black for secondary text */
 }
 
 /* Overall style improvements */
@@ -13,12 +15,23 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.8;
-  color: #333;
+  color: var(--text-color);
   background-color: #fff;
 }
 
 .page__content {
   font-size: 1em;
+}
+
+/* Regular text content should be black */
+p, li, td, th, figcaption, .page__content {
+  color: var(--text-color);
+}
+
+/* Secondary text content slightly lighter */
+.page__meta, .archive__item-excerpt, .notice, 
+.page__date, .page__footer, blockquote {
+  color: var(--light-text);
 }
 
 /* Header styling */
@@ -105,6 +118,7 @@ a:hover, .pagination--pager:hover,
 .author__bio {
   font-size: 0.9em;
   margin-top: 5px;
+  color: var(--text-color);
 }
 
 .sidebar .author__content {
@@ -115,7 +129,7 @@ a:hover, .pagination--pager:hover,
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color: #222;
+  color: var(--darker-purple);
   margin-top: 1.5em;
 }
 
@@ -164,6 +178,14 @@ h2 {
 .research-item img {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Research content text should be black */
+.research-item-content p, 
+.research-item-content li, 
+.research-card-content p,
+.research-card-content li {
+  color: var(--text-color);
 }
 
 /* Footer */

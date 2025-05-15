@@ -43,6 +43,8 @@
     --medium-purple: #9E95B7;  /* Medium purple for hover states */
     --darker-purple: #7D6E96;  /* Darker purple for text and links */
     --darkest-purple: #4A3A69; /* Darkest purple for emphasis */
+    --text-color: #333;        /* Black for regular text content */
+    --light-text: #555;        /* Lighter black for secondary text */
   }
 
   /* Override any remaining blue colors with darker purple for text elements */
@@ -71,6 +73,18 @@
   /* Use light purple for decorative backgrounds */
   .research-item-header, .research-card-header {
     background-color: var(--light-purple) !important;
+  }
+  
+  /* Regular text should be black */
+  p, li, td, th, figcaption, .page__content,
+  .research-item-content p, .research-card-content p,
+  .research-item-content li, .research-card-content li {
+    color: var(--text-color) !important;
+  }
+  
+  /* Description text slightly lighter */
+  .page-description, .author__bio {
+    color: var(--light-text) !important;
   }
 </style>
 
