@@ -1,12 +1,49 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Teaching and Mentoring"
 permalink: /teaching/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="teaching-container">
+  <h2>Guest Lectures and Workshops</h2>
+  
+  {% for post in site.teaching reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+  
+  <h2>Student Mentoring</h2>
+  <div class="mentoring-section">
+    <h3>Graduate Students</h3>
+    <ul>
+      <li>
+        <strong>Jane Doe</strong> (2023-present) - PhD student working on wearable sensing for neurological disorders
+      </li>
+      <li>
+        <strong>John Smith</strong> (2022-present) - MS student researching edge computing for healthcare applications
+      </li>
+    </ul>
+    
+    <h3>Undergraduate Research Assistants</h3>
+    <ul>
+      <li>
+        <strong>Alice Johnson</strong> (2023-2024) - Senior thesis on privacy-preserving methods in health monitoring
+      </li>
+      <li>
+        <strong>Bob Williams</strong> (2022-2023) - Research project on machine learning for physiological signal analysis
+      </li>
+    </ul>
+  </div>
+  
+  <h2>Teaching Philosophy</h2>
+  <div class="philosophy-section">
+    <p>
+      My teaching approach combines theoretical foundations with practical, hands-on experience. I believe in creating
+      an inclusive learning environment that encourages critical thinking and collaborative problem-solving.
+      In my teaching, I emphasize the ethical implications of technology in healthcare and the importance of
+      developing solutions that address real-world challenges while respecting privacy and promoting equity.
+    </p>
+  </div>
+</div>

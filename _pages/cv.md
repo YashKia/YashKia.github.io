@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,35 +11,41 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Electrical and Computer Engineering, Georgia Institute of Technology, 2022
+* B.S. in Electrical Engineering, University of Technology, 2016
 
-Work experience
+Academic Appointments
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2022-Present: Postdoctoral Fellow
+  * Emory University, Department of Biomedical Informatics
+  * Clifford Lab
+  * Research focus: AI-driven methods for improving health and healthcare, wearable sensing technologies for neurological disorders
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Research Experience
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 2022-Present: Postdoctoral Researcher
+  * Emory University, Clifford Lab
+  * Projects: 
+    * Detecting cognitive markers in older adults at risk for Mild Cognitive Impairment
+    * Sleep and behavior analysis in children with autism spectrum disorder
+    * Development of edge computing systems for privacy-focused health monitoring
+  * Collaborations: Cognitive Empowerment Program, Goizueta Alzheimer's Disease Research Center, The Center for Discovery
+
+* 2017-2022: Graduate Research Assistant
+  * Georgia Institute of Technology
+  * Research focus: Knowledge discovery in nanophotonics using dimensionality reduction and explainable AI models
+
+Grants and Funding
+======
+* 2024-2027: Thrasher Research Fund Early Career Award
+  * Project: "Enhancing Behavioral Understandings and Interventions in Children with Autism Spectrum Disorder using Artificial Intelligence"
+
+Technical Skills
+======
+* Programming Languages: Python, MATLAB, R
+* Machine Learning: Deep learning, explainable AI, dimensionality reduction
+* Data Analysis: Statistical analysis, signal processing, time series analysis
+* Hardware: Wearable sensors, edge computing, IoT devices
 
 Publications
 ======
@@ -47,18 +53,14 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Talks & Presentations
 ======
   <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
+    {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
+Professional Service
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Reviewer for IEEE Journal of Biomedical and Health Informatics
+* Reviewer for Physiological Measurements
+* Member, IEEE Engineering in Medicine and Biology Society

@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "About me"
+title                    : "Dr. Yashar Kiarashi"
 title_separator          : "-"
 name                     : &name ""
-description              : &description "personal description"
+description              : &description "Researcher in AI-driven Healthcare Technology and Biomedical Informatics"
 url                      : https://yashkia.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "YashKia/YashKia.github.io"
@@ -22,9 +22,9 @@ repository               : "YashKia/YashKia.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Yashar Kiarashi"
+  name             : "Yashar Kiarashi, PhD"
   pronouns         : # example: "she/her"  
-  bio              : "Post Doctoral Fellow"
+  bio              : "Post Doctoral Fellow in Biomedical Informatics"
   location         : "<span style='display: inline-block; vertical-align: middle;'><a href='https://en.wikipedia.org/wiki/Atlanta' target='_blank'>Atlanta</a></span>"
   employer         : "<span style='display: inline-block; vertical-align: middle;'><a href='https://www.emory.edu' target='_blank'>Emory University</a></span>"
   uri              : # URL

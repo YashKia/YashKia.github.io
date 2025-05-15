@@ -1,5 +1,25 @@
+# main links links
 main:
+  - title: "Home"
+    url: /
+    
+  - title: "Publications"
+    url: /publications/
+
   - title: "Research"
     url: /research/
-  - title: "Publication"
-    url: /publications/
+    
+  - title: "Teaching"
+    url: /teaching/
+    
+  - title: "Grants & Funding"
+    url: /funding/
+    
+  - title: "Talks"
+    url: /talks/
+    
+  - title: "CV"
+    url: /cv/
+    
+  - title: "Contact"
+    url: /contact/

@@ -7,22 +7,24 @@ redirect_from:
   - /about.html
 ---
 
-## About
+## Research Overview
 
 <div style="text-align: justify;"> 
-I'm a postdoctoral researcher at the <a href="https://gdclifford.info/gari">Clifford Lab</a>, where I work on AI-driven methods for improving health and healthcare. My main focus is on developing unique sensing technologies to detect physiological and psychological patterns, with the goal of enabling early detection and personalized care to improve patient outcomes.
+As a postdoctoral researcher at the <a href="https://gdclifford.info/gari">Clifford Lab</a> at Emory University, my research focuses on developing novel AI-driven methods and sensing technologies to address critical challenges in healthcare, particularly for neurological and developmental disorders. My interdisciplinary approach combines expertise in artificial intelligence, wearable sensing, and signal processing to create tools that can improve patient outcomes through early detection and personalized interventions.
 
-For the past three years, I've been exploring new biomarkers for neurological disorders using wearable and nearable technologies. In collaboration with the <a href="https://empowerment.emory.edu">Cognitive Empowerment Program</a> and the <a href="https://alzheimers.emory.edu">Goizueta Alzheimer’s Disease Research Center</a>, I’m working on identifying cognitive markers in older adults at risk for Mild Cognitive Impairment. This involves integrating data from <a href="https://www.nextsense.io">NextSense in-ear EEG devices</a>, wristband health monitors, and analyzing movement and social interactions to get a clearer picture of cognitive health. I’m also collaborating with <a href="https://thecenterfordiscovery.org">The Center for Discovery</a> on a project that looks at how sleep and daytime behaviors are linked in children with autism. For this, I'm building an end-to-end edge computing system using off-body sensors in a privacy-focused way to better understand the connection between sleep and health.
+My current research program focuses on three interconnected areas:
 
-Before coming to <a href="https://www.emory.edu/home/index.html">Emory</a> for my postdoc, I earned my PhD from <a href="https://www.gatech.edu">Georgia Tech</a>. My PhD work focused on developing new approaches for knowledge discovery in nanophotonics, particularly using dimensionality reduction. This research helped speed up the design of nanoscale sensors by using explainable AI models to better understand how light interacts with matter!
+1) **Novel Biomarkers for Neurological Disorders**: Working with the <a href="https://empowerment.emory.edu">Cognitive Empowerment Program</a> and the <a href="https://alzheimers.emory.edu">Goizueta Alzheimer's Disease Research Center</a>, I develop methods to identify cognitive markers in older adults at risk for Mild Cognitive Impairment using multimodal data from wearable technologies, including <a href="https://www.nextsense.io">NextSense in-ear EEG devices</a> and wristband health monitors.
 
-Looking ahead, my goal is to discover new health biomarkers for neurodiverse populations through cutting-edge wearable technology, building on the work I’ve published.
+2) **Privacy-Preserving Sensing for Neurodevelopmental Disorders**: In collaboration with <a href="https://thecenterfordiscovery.org">The Center for Discovery</a>, I am researching the relationship between sleep patterns and behavioral outcomes in children with autism spectrum disorder. This work involves building an end-to-end edge computing system using off-body sensors that prioritizes privacy while extracting meaningful behavioral insights.
+
+3) **Explainable AI for Healthcare Applications**: Building on my PhD research in knowledge discovery using dimensionality reduction at Georgia Tech, I develop interpretable machine learning models that balance predictive power with clinical explainability, allowing healthcare providers to understand and trust AI-driven recommendations.
+
+My research is characterized by a commitment to creating practical solutions that can be deployed in real-world clinical settings while maintaining privacy, ethics, and equity as core principles. Through my work, I aim to bridge the gap between cutting-edge technology and healthcare needs, particularly for vulnerable and underserved populations.
 </div>
 
-
-
-## News
-- [April 2025] Yashar gave a talk in Profound Autism Summit "**Predicting High-Risk Behaviors in Individuals with Profound Autism Using Sleep and Other Environmental Factors**" [presentation link](https://behaviorlive.com/events/predicting-high-risk-behaviors-in-individuals-with-profound-autism-using-sleep-an). <span style="color:green;">Add your contact information [here](https://docs.google.com/forms/d/1VyaFLWRc1fYyPufQz2fSF7NbG3wPcmH757xggiRhzfU/viewform), and we’ll reach out to you for a quick survey.</span>
+## Recent News
+- [April 2025] Yashar gave a talk in Profound Autism Summit "**Predicting High-Risk Behaviors in Individuals with Profound Autism Using Sleep and Other Environmental Factors**" [presentation link](https://behaviorlive.com/events/predicting-high-risk-behaviors-in-individuals-with-profound-autism-using-sleep-an). <span style="color:green;">Add your contact information [here](https://docs.google.com/forms/d/1VyaFLWRc1fYyPufQz2fSF7NbG3wPcmH757xggiRhzfU/viewform), and we'll reach out to you for a quick survey.</span>
 
 
 - [February 2025] Our paper titled "**Feasibility of Assessing Cognitive Impairment via Distributed Camera Network and Privacy‐Preserving Edge Computing**" has been published in **Alzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring**. [link](https://pmc.ncbi.nlm.nih.gov/articles/PMC11848627/)

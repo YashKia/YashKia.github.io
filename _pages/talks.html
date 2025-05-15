@@ -1,16 +1,30 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Research Presentations and Invited Talks"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<div class="talks-container">
+  {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+  
+  <p class="intro-text">
+    This page highlights my recent research presentations, invited talks, and conference appearances. 
+    Each entry includes relevant materials and information about the presentation content.
+  </p>
 
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+  {% for post in sorted_talks %}
+    <div class="talk-item">
+      <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+      <p class="talk-metadata">
+        <strong>{{ post.type }}</strong> at {{ post.venue }}, {{ post.location }} | {{ post.date | date: "%B %Y" }}
+      </p>
+      
+      {{ post.content | markdownify }}
+      
+      <hr>
+    </div>
+  {% endfor %}
+</div>
