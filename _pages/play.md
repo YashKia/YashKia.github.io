@@ -5,49 +5,47 @@ author_profile: true
 ---
 
 <div class="play-container">
-  <h1>Probability Challenge</h1>
+  <h1>Dice Rolling Game</h1>
   
   <div class="game-wrapper">
-    <div id="game-container">
-      <div id="game-board">
-        <div id="coin-container">
-          <div id="coin">
-            <div class="heads"></div>
-            <div class="tails"></div>
-          </div>
-        </div>
-        
-        <div id="dice-container">
-          <div id="dice">
-            <div class="dice-face" id="dice-face"></div>
-          </div>
-        </div>
-        
-        <div id="card-container">
-          <div id="card">
-            <div class="card-inner">
-              <div class="card-front"></div>
-              <div class="card-back"></div>
-            </div>
-          </div>
+    <div id="dice-game">
+      <div id="dice-container">
+        <div id="dice" class="dice">
+          <div class="face front">1</div>
+          <div class="face back">6</div>
+          <div class="face top">2</div>
+          <div class="face bottom">5</div>
+          <div class="face right">3</div>
+          <div class="face left">4</div>
         </div>
       </div>
       
-      <div id="challenge-display"></div>
-      <div id="score-display">Score: <span id="score">0</span> / <span id="total-rounds">0</span></div>
-      
-      <div id="controls">
-        <div id="options-container"></div>
-        <button id="start-btn" class="game-btn">Start Game</button>
-        <button id="next-btn" class="game-btn" style="display: none;">Next Challenge</button>
+      <div id="game-info">
+        <p id="roll-result">Roll the dice to start</p>
+        <p id="score">Your score: 0</p>
+        <p id="target-score">Target score: 21</p>
+        <p id="roll-count">Rolls: 0</p>
       </div>
       
-      <div id="instructions">
-        <h2>How to Play</h2>
-        <p>Let's have some fun!</p>
+      <div id="game-controls">
+        <button id="roll-btn" class="game-btn">Roll Dice</button>
+        <button id="hold-btn" class="game-btn">Hold</button>
+        <button id="new-game-btn" class="game-btn">New Game</button>
       </div>
       
-      <div id="result" style="display: none;"></div>
+      <div id="game-rules">
+        <h3>Rules:</h3>
+        <ul>
+          <li>Roll the dice to accumulate points</li>
+          <li>Your goal is to reach exactly 21 points</li>
+          <li>If you go over 21, you lose!</li>
+          <li>Use the "Hold" button to keep your current score and end your turn</li>
+          <li>The computer will then take its turn</li>
+          <li>Whoever gets closest to 21 without going over wins!</li>
+        </ul>
+      </div>
+      
+      <div id="message" class="hidden"></div>
     </div>
   </div>
 </div>
@@ -67,216 +65,86 @@ author_profile: true
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
   
-  #game-container {
+  #dice-game {
     position: relative;
     width: 100%;
-    height: 500px;
-    border: 2px solid var(--darker-purple);
-    border-radius: 8px;
-    background-color: white;
-    overflow: hidden;
     padding: 20px;
   }
   
-  #game-board {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
-    margin-bottom: 20px;
-    display: none;
-  }
-  
-  /* Coin styling */
-  #coin-container {
-    width: 100px;
-    height: 100px;
-    perspective: 1000px;
-  }
-  
-  #coin {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-  }
-  
-  .heads, .tails {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    border: 2px solid #ccc;
-  }
-  
-  .heads {
-    background-color: gold;
-    color: #333;
-  }
-  
-  .heads:after {
-    content: 'H';
-  }
-  
-  .tails {
-    background-color: silver;
-    color: #333;
-    transform: rotateY(180deg);
-  }
-  
-  .tails:after {
-    content: 'T';
-  }
-  
-  /* Dice styling */
   #dice-container {
-    width: 100px;
-    height: 100px;
-    perspective: 1000px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 600px;
+    margin-bottom: 20px;
   }
   
-  #dice {
-    width: 100%;
-    height: 100%;
+  .dice {
     position: relative;
+    width: 100px;
+    height: 100px;
     transform-style: preserve-3d;
     transition: transform 1s;
   }
   
-  .dice-face {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: white;
-    border: 2px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5em;
-    font-weight: bold;
-  }
-  
-  /* Card styling */
-  #card-container {
-    width: 80px;
-    height: 120px;
-    perspective: 1000px;
-  }
-  
-  #card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .card-front, .card-back {
+  .face {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
-    border-radius: 8px;
-    border: 1px solid #333;
-  }
-  
-  .card-front {
-    background-color: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.5em;
-  }
-  
-  .card-back {
-    background-color: var(--darker-purple);
-    background-image: repeating-linear-gradient(
-      45deg, 
-      var(--darker-purple), 
-      var(--darker-purple) 10px, 
-      var(--darkest-purple) 10px, 
-      var(--darkest-purple) 20px
-    );
-    transform: rotateY(180deg);
-  }
-  
-  #challenge-display {
-    background-color: #f5f0f5;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 15px 0;
-    font-size: 1.1em;
-    border-left: 4px solid var(--darker-purple);
-    text-align: left;
-    min-height: 60px;
-  }
-  
-  #score-display {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 5px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
-    margin: 10px 0;
-    text-align: right;
-  }
-  
-  #controls {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #options-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  
-  .option-btn {
-    padding: 8px 15px;
     background-color: white;
     border: 2px solid var(--darker-purple);
-    color: var(--darker-purple);
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 10px;
+    font-size: 3em;
     font-weight: bold;
-    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.1);
   }
   
-  .option-btn:hover {
-    background-color: var(--light-purple);
+  .front {
+    transform: translateZ(50px);
   }
   
-  .option-btn.selected {
-    background-color: var(--darker-purple);
-    color: white;
+  .back {
+    transform: translateZ(-50px) rotateY(180deg);
+  }
+  
+  .top {
+    transform: rotateX(-90deg) translateZ(50px);
+  }
+  
+  .bottom {
+    transform: rotateX(90deg) translateZ(50px);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(50px);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(50px);
+  }
+  
+  #game-info {
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  #roll-result {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--darker-purple);
+  }
+  
+  #game-controls {
+    margin: 20px 0;
   }
   
   .game-btn {
-    margin: 10px 5px;
+    margin: 10px;
     padding: 10px 20px;
     background-color: var(--darker-purple);
     color: white;
@@ -285,378 +153,252 @@ author_profile: true
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    transition: background-color 0.3s;
   }
   
   .game-btn:hover {
     background-color: var(--darkest-purple);
   }
   
-  #instructions {
-    padding: 15px;
-    margin-top: 20px;
-    text-align: center;
+  .game-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
   }
   
-  #result {
-    margin-top: 20px;
+  #game-rules {
+    margin: 30px 0;
+    text-align: left;
     padding: 15px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+  }
+  
+  #message {
+    padding: 15px;
+    margin: 20px 0;
     border-radius: 8px;
     font-weight: bold;
-    text-align: center;
+    font-size: 1.2em;
   }
   
-  .correct {
+  .win {
     background-color: #d4edda;
     color: #155724;
-    border: 1px solid #c3e6cb;
   }
   
-  .incorrect {
+  .lose {
     background-color: #f8d7da;
     color: #721c24;
-    border: 1px solid #f5c6cb;
   }
   
-  .final-result {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f5f0f5;
-    border-radius: 8px;
-    text-align: center;
+  .draw {
+    background-color: #fff3cd;
+    color: #856404;
   }
   
-  @media (max-width: 600px) {
-    #game-board {
-      flex-direction: column;
-      height: auto;
-      gap: 20px;
-    }
-    
-    #options-container {
-      flex-direction: column;
-    }
+  .hidden {
+    display: none;
   }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('Dice game loaded');
+  
   // DOM elements
-  const gameBoard = document.getElementById('game-board');
-  const coin = document.getElementById('coin');
   const dice = document.getElementById('dice');
-  const diceFace = document.getElementById('dice-face');
-  const card = document.querySelector('.card-inner');
-  const cardFront = document.querySelector('.card-front');
-  const challengeDisplay = document.getElementById('challenge-display');
+  const rollResult = document.getElementById('roll-result');
   const scoreDisplay = document.getElementById('score');
-  const totalRoundsDisplay = document.getElementById('total-rounds');
-  const optionsContainer = document.getElementById('options-container');
-  const startBtn = document.getElementById('start-btn');
-  const nextBtn = document.getElementById('next-btn');
-  const instructions = document.getElementById('instructions');
-  const resultDisplay = document.getElementById('result');
+  const targetScoreDisplay = document.getElementById('target-score');
+  const rollCountDisplay = document.getElementById('roll-count');
+  const rollBtn = document.getElementById('roll-btn');
+  const holdBtn = document.getElementById('hold-btn');
+  const newGameBtn = document.getElementById('new-game-btn');
+  const messageDisplay = document.getElementById('message');
   
   // Game state
-  let score = 0;
-  let currentRound = 0;
-  let totalRounds = 10;
-  let selectedOption = null;
-  let correctAnswer = null;
-  let gameActive = false;
-  let currentChallenge = null;
+  let playerScore = 0;
+  let computerScore = 0;
+  let currentRoll = 0;
+  let rollCount = 0;
+  let isPlayerTurn = true;
+  let gameOver = false;
   
-  // Challenge types
-  const challengeTypes = [
-    'coin_flip',
-    'coin_sequence',
-    'dice_roll',
-    'dice_sum',
-    'card_color',
-    'card_suit',
-    'card_value',
-    'combined_probability'
-  ];
-  
-  // Card values and suits
-  const cardValues = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-  const cardSuits = ['♥', '♦', '♣', '♠'];
-  const redSuits = ['♥', '♦'];
+  // Target score
+  const targetScore = 21;
   
   // Initialize the game
   function initGame() {
-    console.log('Game initializing...');
-    score = 0;
-    currentRound = 0;
-    gameActive = true;
-    scoreDisplay.textContent = score;
-    totalRoundsDisplay.textContent = totalRounds;
+    console.log('Initializing new game');
+    playerScore = 0;
+    computerScore = 0;
+    rollCount = 0;
+    isPlayerTurn = true;
+    gameOver = false;
     
-    startBtn.style.display = 'none';
-    instructions.style.display = 'none';
-    gameBoard.style.display = 'flex';
+    updateDisplays();
+    rollResult.textContent = 'Roll the dice to start';
+    messageDisplay.className = 'hidden';
     
-    console.log('Starting first challenge...');
-    nextChallenge();
-    console.log('Game initialized');
+    rollBtn.disabled = false;
+    holdBtn.disabled = false;
   }
   
-  // Generate the next challenge
-  function nextChallenge() {
-    console.log('Next challenge called, current round:', currentRound);
-    if (currentRound >= totalRounds) {
-      console.log('All rounds complete, ending game');
-      endGame();
-      return;
-    }
-    
-    currentRound++;
-    console.log('Advancing to round:', currentRound);
-    resultDisplay.style.display = 'none';
-    nextBtn.style.display = 'none';
-    
-    // Reset all animations and displays
-    coin.style.transform = '';
-    dice.style.transform = '';
-    card.style.transform = '';
-    
-    // Randomly select a challenge type
-    const challengeType = challengeTypes[Math.floor(Math.random() * challengeTypes.length)];
-    console.log('Selected challenge type:', challengeType);
-    generateChallenge(challengeType);
+  // Update all displays
+  function updateDisplays() {
+    scoreDisplay.textContent = `Your score: ${playerScore}`;
+    targetScoreDisplay.textContent = `Target score: ${targetScore}`;
+    rollCountDisplay.textContent = `Rolls: ${rollCount}`;
   }
   
-  // Generate a specific challenge
-  function generateChallenge(type) {
-    optionsContainer.innerHTML = '';
-    currentChallenge = type;
-    
-    switch(type) {
-      case 'coin_flip':
-        createCoinFlipChallenge();
-        break;
-      case 'coin_sequence':
-        createCoinSequenceChallenge();
-        break;
-      case 'dice_roll':
-        createDiceRollChallenge();
-        break;
-      case 'dice_sum':
-        createDiceSumChallenge();
-        break;
-      case 'card_color':
-        createCardColorChallenge();
-        break;
-      case 'card_suit':
-        createCardSuitChallenge();
-        break;
-      case 'card_value':
-        createCardValueChallenge();
-        break;
-      case 'combined_probability':
-        createCombinedProbabilityChallenge();
-        break;
-    }
-  }
-  
-  // Challenge creators
-  function createCoinFlipChallenge() {
-    challengeDisplay.innerHTML = "What is the probability of flipping a coin and getting heads?";
-    
-    const options = ["1/2 (50%)", "1/3 (33.3%)", "2/3 (66.7%)"];
-    correctAnswer = "1/2 (50%)";
-    
-    createOptions(options);
-  }
-  
-  function createCoinSequenceChallenge() {
-    challengeDisplay.innerHTML = "What is the probability of flipping a coin 3 times and getting all heads?";
-    
-    const options = ["1/8 (12.5%)", "1/4 (25%)", "3/8 (37.5%)", "1/2 (50%)"];
-    correctAnswer = "1/8 (12.5%)";
-    
-    createOptions(options);
-  }
-  
-  function createDiceRollChallenge() {
-    challengeDisplay.innerHTML = "What is the probability of rolling a 6 on a standard six-sided die?";
-    
-    const options = ["1/6 (16.7%)", "1/3 (33.3%)", "1/2 (50%)"];
-    correctAnswer = "1/6 (16.7%)";
-    
-    createOptions(options);
-  }
-  
-  function createDiceSumChallenge() {
-    challengeDisplay.innerHTML = "When rolling two six-sided dice, what is the probability of getting a sum of 7?";
-    
-    const options = ["1/6 (16.7%)", "5/36 (13.9%)", "1/12 (8.3%)", "6/36 (16.7%)"];
-    correctAnswer = "6/36 (16.7%)";
-    
-    createOptions(options);
-  }
-  
-  function createCardColorChallenge() {
-    challengeDisplay.innerHTML = "What is the probability of drawing a red card (hearts or diamonds) from a standard 52-card deck?";
-    
-    const options = ["1/4 (25%)", "1/2 (50%)", "3/4 (75%)"];
-    correctAnswer = "1/2 (50%)";
-    
-    createOptions(options);
-  }
-  
-  function createCardSuitChallenge() {
-    challengeDisplay.innerHTML = "What is the probability of drawing a club from a standard 52-card deck?";
-    
-    const options = ["1/4 (25%)", "1/3 (33.3%)", "1/2 (50%)"];
-    correctAnswer = "1/4 (25%)";
-    
-    createOptions(options);
-  }
-  
-  function createCardValueChallenge() {
-    challengeDisplay.innerHTML = "What is the probability of drawing a face card (Jack, Queen, or King) from a standard 52-card deck?";
-    
-    const options = ["3/13 (23.1%)", "1/4 (25%)", "3/26 (11.5%)"];
-    correctAnswer = "3/13 (23.1%)";
-    
-    createOptions(options);
-  }
-  
-  function createCombinedProbabilityChallenge() {
-    challengeDisplay.innerHTML = "What is the probability of rolling a six-sided die and flipping a coin, and getting both a 3 and heads?";
-    
-    const options = ["1/12 (8.3%)", "1/6 (16.7%)", "1/3 (33.3%)"];
-    correctAnswer = "1/12 (8.3%)";
-    
-    createOptions(options);
-  }
-  
-  // Create option buttons
-  function createOptions(options) {
-    options.forEach(option => {
-      const button = document.createElement('button');
-      button.className = 'option-btn';
-      button.textContent = option;
-      button.addEventListener('click', () => selectOption(option, button));
-      optionsContainer.appendChild(button);
-    });
-  }
-  
-  // Handle option selection
-  function selectOption(option, button) {
-    // Reset all buttons
-    document.querySelectorAll('.option-btn').forEach(btn => {
-      btn.classList.remove('selected');
-    });
-    
-    // Select the clicked button
-    button.classList.add('selected');
-    selectedOption = option;
-    
-    // Show animation based on challenge type
-    if (currentChallenge.includes('coin')) {
-      flipCoin();
-    } else if (currentChallenge.includes('dice')) {
-      rollDice();
-    } else if (currentChallenge.includes('card')) {
-      drawCard();
-    } else {
-      // For combined challenges, show both animations
-      flipCoin();
-      setTimeout(rollDice, 300);
-    }
-    
-    // After a delay, check the answer
-    setTimeout(checkAnswer, 1500);
-    
-    // Add console logging for debugging
-    console.log('Option selected:', option);
-  }
-  
-  // Animation functions
-  function flipCoin() {
-    const random = Math.random();
-    coin.style.transform = `rotateY(${random < 0.5 ? 0 : 180}deg)`;
-  }
-  
+  // Roll the dice
   function rollDice() {
-    const random = Math.floor(Math.random() * 6) + 1;
-    dice.style.transform = `rotateX(${random * 60}deg) rotateY(${random * 90}deg)`;
-    diceFace.textContent = random;
-  }
-  
-  function drawCard() {
-    const randomValue = cardValues[Math.floor(Math.random() * cardValues.length)];
-    const randomSuit = cardSuits[Math.floor(Math.random() * cardSuits.length)];
-    const color = redSuits.includes(randomSuit) ? 'red' : 'black';
+    if (gameOver) return;
     
-    cardFront.textContent = `${randomValue}${randomSuit}`;
-    cardFront.style.color = color;
-    card.style.transform = 'rotateY(180deg)';
-  }
-  
-  // Check the selected answer
-  function checkAnswer() {
-    if (selectedOption === correctAnswer) {
-      score++;
-      scoreDisplay.textContent = score;
-      resultDisplay.innerHTML = "Correct! 🎉";
-      resultDisplay.className = "correct";
+    rollCount++;
+    
+    // Generate random number 1-6
+    currentRoll = Math.floor(Math.random() * 6) + 1;
+    console.log('Rolled:', currentRoll);
+    
+    // Animate dice
+    const rotX = Math.floor(Math.random() * 4) * 90;
+    const rotY = Math.floor(Math.random() * 4) * 90;
+    const rotZ = Math.floor(Math.random() * 4) * 90;
+    
+    dice.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg) rotateZ(${rotZ}deg)`;
+    
+    // Update displays after roll
+    rollResult.textContent = `You rolled: ${currentRoll}`;
+    
+    // Update score based on whose turn it is
+    if (isPlayerTurn) {
+      playerScore += currentRoll;
+      scoreDisplay.textContent = `Your score: ${playerScore}`;
+      
+      // Check if player went over
+      if (playerScore > targetScore) {
+        endGame('player-bust');
+      } else if (playerScore === targetScore) {
+        endGame('player-win');
+      }
     } else {
-      resultDisplay.innerHTML = `Incorrect. The correct answer is ${correctAnswer}.`;
-      resultDisplay.className = "incorrect";
+      computerScore += currentRoll;
+      rollResult.textContent = `Computer rolled: ${currentRoll}`;
+      
+      // Check if computer went over
+      if (computerScore > targetScore) {
+        endGame('computer-bust');
+      } else if (computerScore === targetScore) {
+        endGame('computer-win');
+      } else if (computerScore >= playerScore || computerScore >= 17) {
+        // Computer holds at 17 or higher, or if they're beating the player
+        compareScores();
+      } else {
+        // Computer decides to roll again
+        setTimeout(rollDice, 1000);
+      }
     }
     
-    resultDisplay.style.display = 'block';
-    nextBtn.style.display = 'block';
+    updateDisplays();
   }
   
-  // End the game and show results
-  function endGame() {
-    gameActive = false;
-    gameBoard.style.display = 'none';
-    optionsContainer.innerHTML = '';
-    challengeDisplay.innerHTML = '';
-    nextBtn.style.display = 'none';
+  // Player holds their score
+  function hold() {
+    if (gameOver || !isPlayerTurn) return;
     
-    const percentage = Math.round((score / totalRounds) * 100);
-    let message;
+    isPlayerTurn = false;
+    rollResult.textContent = 'Computer\'s turn';
     
-    if (percentage >= 90) {
-      message = "Excellent! You're a probability master!";
-    } else if (percentage >= 70) {
-      message = "Great job! You have a solid understanding of probability.";
-    } else if (percentage >= 50) {
-      message = "Good effort! Keep practicing probability concepts.";
+    // Disable player buttons during computer's turn
+    rollBtn.disabled = true;
+    holdBtn.disabled = true;
+    
+    // Computer takes turn after a delay
+    setTimeout(() => {
+      computerTurn();
+    }, 1000);
+  }
+  
+  // Computer's turn
+  function computerTurn() {
+    computerScore = 0;
+    rollResult.textContent = 'Computer is rolling...';
+    
+    // First roll
+    setTimeout(rollDice, 1000);
+  }
+  
+  // Compare scores to determine winner
+  function compareScores() {
+    if (playerScore > targetScore) {
+      endGame('player-bust');
+    } else if (computerScore > targetScore) {
+      endGame('computer-bust');
+    } else if (playerScore > computerScore) {
+      endGame('player-win');
+    } else if (computerScore > playerScore) {
+      endGame('computer-win');
     } else {
-      message = "Keep learning! Probability can be tricky, but you'll get better with practice.";
+      endGame('draw');
+    }
+  }
+  
+  // End the game
+  function endGame(result) {
+    gameOver = true;
+    rollBtn.disabled = true;
+    holdBtn.disabled = true;
+    
+    messageDisplay.classList.remove('hidden', 'win', 'lose', 'draw');
+    
+    switch (result) {
+      case 'player-win':
+        messageDisplay.textContent = 'You win! 🎉';
+        messageDisplay.classList.add('win');
+        break;
+      case 'player-bust':
+        messageDisplay.textContent = `You went over ${targetScore}! Computer wins.`;
+        messageDisplay.classList.add('lose');
+        break;
+      case 'computer-win':
+        messageDisplay.textContent = 'Computer wins!';
+        messageDisplay.classList.add('lose');
+        break;
+      case 'computer-bust':
+        messageDisplay.textContent = `Computer went over ${targetScore}! You win! 🎉`;
+        messageDisplay.classList.add('win');
+        break;
+      case 'draw':
+        messageDisplay.textContent = 'It\'s a draw!';
+        messageDisplay.classList.add('draw');
+        break;
     }
     
-    instructions.innerHTML = `
-      <div class="final-result">
-        <h2>Game Complete!</h2>
-        <p>Your score: ${score} out of ${totalRounds} (${percentage}%)</p>
-        <p>${message}</p>
-      </div>
-    `;
-    
-    instructions.style.display = 'block';
-    startBtn.textContent = 'Play Again';
-    startBtn.style.display = 'block';
+    console.log('Game ended:', result);
   }
   
   // Event listeners
-  startBtn.addEventListener('click', function() {
-    console.log('Start button clicked');
+  rollBtn.addEventListener('click', function() {
+    console.log('Roll button clicked');
+    if (isPlayerTurn && !gameOver) {
+      rollDice();
+    }
+  });
+  
+  holdBtn.addEventListener('click', function() {
+    console.log('Hold button clicked');
+    if (isPlayerTurn && !gameOver) {
+      hold();
+    }
+  });
+  
+  newGameBtn.addEventListener('click', function() {
+    console.log('New game button clicked');
     initGame();
   });
   
-  nextBtn.addEventListener('click', function() {
-    console.log('Next button clicked');
-    nextChallenge();
-  });
-  
-  // Debug log on page load
-  console.log('Probability game script loaded');
+  // Initialize game on load
+  initGame();
 });
 </script>
