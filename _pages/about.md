@@ -96,7 +96,7 @@ redirect_from:
   
   .name-heading {
     font-size: 2.2em;
-    color: #2a76dd;
+    color: #702963;
     margin-bottom: 0.1em;
     text-align: center;
   }
@@ -126,12 +126,12 @@ redirect_from:
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 1.5em;
-    border-left: 4px solid #2a76dd;
+    border-left: 4px solid #702963;
   }
   
   .research-area h4 {
     margin-top: 0;
-    color: #2a76dd;
+    color: #702963;
   }
   
   .news-section {

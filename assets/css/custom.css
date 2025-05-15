@@ -29,16 +29,56 @@ body {
 }
 
 .greedy-nav a {
-  color: #2a76dd;
+  color: #702963;
 }
 
 .greedy-nav a:hover {
-  color: #1c60c0;
+  color: #5a1e50;
 }
 
 .greedy-nav .visible-links a:before {
   height: 2px;
-  background: #2a76dd;
+  background: #702963;
+}
+
+/* Override ALL links to use purple color */
+a, a:visited, .pagination--pager, 
+.pagination li a, .toc a, 
+.nav__list a, .nav__sub-title a,
+.sidebar a, .author__urls a {
+  color: #702963 !important;
+}
+
+/* Override hover states for ALL links */
+a:hover, .pagination--pager:hover,
+.pagination li a:hover, .toc a:hover,
+.nav__list a:hover, .nav__sub-title a:hover,
+.sidebar a:hover, .author__urls a:hover {
+  color: #5a1e50 !important;
+}
+
+/* Override buttons */
+.btn--primary, .btn--info, 
+.btn--small, .btn--medium,
+.btn--large, .btn--x-large {
+  background-color: #702963 !important;
+}
+
+.btn--primary:hover, .btn--info:hover,
+.btn--small:hover, .btn--medium:hover, 
+.btn--large:hover, .btn--x-large:hover {
+  background-color: #5a1e50 !important;
+}
+
+/* Override pagination active state */
+.pagination li a.current {
+  background-color: #702963 !important;
+}
+
+/* Override active navigation elements */
+.greedy-nav .visible-links a:before,
+.nav__list .active {
+  background-color: #702963 !important;
 }
 
 /* Sidebar improvements */
@@ -60,17 +100,6 @@ body {
 
 .sidebar .author__content {
   text-align: center;
-}
-
-/* Links */
-a {
-  color: #2a76dd;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #1c60c0;
-  text-decoration: none;
 }
 
 /* Headings */
@@ -119,7 +148,7 @@ h2 {
 }
 
 .research-item h2 {
-  color: #2a76dd;
+  color: #702963;
   font-size: 1.5em;
 }
 
@@ -165,4 +194,39 @@ p {
 /* Add a subtle animation to links */
 a {
   transition: color 0.2s ease-in-out;
+}
+
+/* Override any page-specific purple coloring */
+.page-title, .name-heading, .research-card-header, .filter-btn.active, 
+.research-area h4, .related-publications h3, .research-card-header, 
+.profile-link i, .contact-icon, .publication-item, .research-area {
+  color: #702963 !important;
+}
+
+.research-card-header, .filter-btn.active {
+  background-color: #702963 !important;
+  border-color: #702963 !important;
+}
+
+.research-card-header h2 {
+  color: white !important;
+}
+
+.publication-item, .research-area {
+  border-left-color: #702963 !important;
+} 
+
+/* Override TOC and navigation elements */
+.toc .nav__title {
+  background-color: #702963 !important;
+}
+
+.nav__list .active {
+  background-color: #702963 !important;
+}
+
+/* Override any remaining blue elements */
+.notice--info, .notice--primary {
+  background-color: #f5f0f5 !important;
+  border-left-color: #702963 !important;
 } 
