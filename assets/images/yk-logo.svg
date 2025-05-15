@@ -3,29 +3,26 @@
   <!-- Background circle -->
   <circle cx="100" cy="100" r="90" fill="#BDB5D5" />
   
-  <!-- Brain outline representing neurology and neural networks -->
-  <path d="M70,60 C60,70 55,85 55,100 C55,110 60,120 70,130 C80,140 90,145 100,145 C110,145 120,140 130,130 C140,120 145,110 145,100 C145,85 140,70 130,60 C120,50 110,45 100,45 C90,45 80,50 70,60 Z" fill="none" stroke="#7D6E96" stroke-width="4"/>
+  <!-- Stylized head silhouette -->
+  <path d="M75,50 C70,65 70,80 70,100 C70,120 75,140 85,150 C95,160 105,165 115,160 C125,155 130,145 130,130 C130,115 125,100 130,85 C135,70 140,65 130,55 C120,45 110,45 100,45 C90,45 80,45 75,50 Z" fill="none" stroke="#7D6E96" stroke-width="3"/>
   
-  <!-- Neural connections -->
-  <circle cx="75" cy="80" r="5" fill="#7D6E96" />
-  <circle cx="100" cy="70" r="5" fill="#7D6E96" />
-  <circle cx="125" cy="80" r="5" fill="#7D6E96" />
-  <circle cx="80" cy="110" r="5" fill="#7D6E96" />
-  <circle cx="120" cy="110" r="5" fill="#7D6E96" />
-  <circle cx="100" cy="125" r="5" fill="#7D6E96" />
+  <!-- EEG waveform patterns through head -->
+  <path d="M65,70 C80,65 85,75 90,70 C95,65 100,75 105,70 C110,65 115,75 120,70 C125,65 130,75 135,70" fill="none" stroke="#4A3A69" stroke-width="2" />
   
-  <!-- Neural connections - lines -->
-  <line x1="75" y1="80" x2="100" y2="70" stroke="#7D6E96" stroke-width="2" />
-  <line x1="100" y1="70" x2="125" y2="80" stroke="#7D6E96" stroke-width="2" />
-  <line x1="75" y1="80" x2="80" y2="110" stroke="#7D6E96" stroke-width="2" />
-  <line x1="125" y1="80" x2="120" y2="110" stroke="#7D6E96" stroke-width="2" />
-  <line x1="80" y1="110" x2="100" y2="125" stroke="#7D6E96" stroke-width="2" />
-  <line x1="120" y1="110" x2="100" y2="125" stroke="#7D6E96" stroke-width="2" />
-  <line x1="80" y1="110" x2="120" y2="110" stroke="#7D6E96" stroke-width="2" />
+  <path d="M65,90 C80,85 85,95 90,90 C95,85 100,95 105,90 C110,85 115,95 120,90 C125,85 130,95 135,90" fill="none" stroke="#4A3A69" stroke-width="2" />
   
-  <!-- Data wave representing biomedical signals -->
-  <path d="M55,100 C60,95 65,105 70,100 C75,95 80,105 85,100 C90,95 95,105 100,100 C105,95 110,105 115,100 C120,95 125,105 130,100 C135,95 140,105 145,100" fill="none" stroke="#4A3A69" stroke-width="3" />
+  <path d="M65,110 C80,105 85,115 90,110 C95,105 100,115 105,110 C110,105 115,115 120,110 C125,105 130,115 135,110" fill="none" stroke="#4A3A69" stroke-width="2" />
   
-  <!-- Initials YK stylized -->
-  <text x="100" y="170" text-anchor="middle" font-family="'Arial', sans-serif" font-weight="bold" font-size="36" fill="#4A3A69">YK</text>
+  <path d="M65,130 C80,125 85,135 90,130 C95,125 100,135 105,130 C110,125 115,135 120,130 C125,125 130,135 135,130" fill="none" stroke="#4A3A69" stroke-width="2" />
+  
+  <!-- Neural network at the bottom -->
+  <g transform="translate(70, 165)">
+    <circle cx="0" cy="0" r="5" fill="#7D6E96" />
+    <circle cx="15" cy="-10" r="5" fill="#7D6E96" />
+    <circle cx="30" cy="0" r="5" fill="#7D6E96" />
+    <circle cx="45" cy="-10" r="5" fill="#7D6E96" />
+    <circle cx="60" cy="0" r="5" fill="#7D6E96" />
+    
+    <path d="M0,0 L15,-10 M0,0 L30,0 M15,-10 L30,0 M15,-10 L45,-10 M30,0 L45,-10 M30,0 L60,0 M45,-10 L60,0" stroke="#4A3A69" stroke-width="1.5" fill="none" />
+  </g>
 </svg> 
