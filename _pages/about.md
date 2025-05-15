@@ -30,7 +30,7 @@ redirect_from:
       
       <div class="research-area">
         <h4><span class="area-icon">📊</span> AI-Driven Pattern Recognition for Health Monitoring</h4>
-        <p>Building on my PhD research in knowledge discovery at Georgia Tech, I develop interpretable machine learning models for biomedical applications. This includes work on the <a href="https://moody-challenge.physionet.org/2022/">George B. Moody PhysioNet Challenge</a>, co-organizing a challenge with over 80 participants on heart murmur detection from phonocardiogram recordings.</p>
+        <p>Building on my PhD research in knowledge discovery at Georgia Tech, I develop interpretable machine learning models for biomedical applications that can extract valuable insights from complex physiological data.</p>
       </div>
     </div>
 
