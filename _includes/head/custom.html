@@ -17,7 +17,7 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
 <link rel="manifest" href="{{ base_path }}/images/manifest.json?v=M44lzPylqQ">
 <link rel="mask-icon" href="{{ base_path }}/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<link rel="shortcut icon" href="{{ base_path }}/favicon.ico">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="{{ base_path }}/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
@@ -88,8 +88,28 @@
   }
 </style>
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
-<link rel="icon" type="image/svg+xml" href="{{ base_path }}/assets/images/yk-logo.svg">
-<link rel="alternate icon" type="image/png" href="{{ base_path }}/assets/images/favicon-32x32.png">
+<!-- Google Search Console verification -->
+<meta name="google-site-verification" content="YourVerificationCodeHere">
+
+<!-- Schema.org markup for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yashar Kiarashi",
+  "url": "https://yashkia.github.io",
+  "image": "https://yashkia.github.io/images/Logo.png",
+  "jobTitle": "Postdoctoral Researcher",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Emory University"
+  },
+  "sameAs": [
+    "https://scholar.google.com/citations?user=1WWKzTEAAAAJ&hl=en&authuser=1",
+    "https://github.com/YashKia",
+    "https://www.linkedin.com/in/yashar-kiarashinejad/"
+  ]
+}
+</script>
 
 <!-- end custom head snippets -->
