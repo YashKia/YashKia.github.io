@@ -197,6 +197,23 @@ h2 {
 
 .page__footer-copyright {
   color: #888;
+  background-color: transparent;
+}
+
+/* Remove background color from footer links */
+.page__footer a, 
+.page__footer-follow a,
+.page__footer-copyright a {
+  background-color: transparent !important;
+  color: #666 !important;
+}
+
+.page__footer a:hover,
+.page__footer-follow a:hover,
+.page__footer-copyright a:hover {
+  color: var(--darker-purple) !important;
+  background-color: transparent !important;
+  text-decoration: underline;
 }
 
 /* Responsive improvements */
