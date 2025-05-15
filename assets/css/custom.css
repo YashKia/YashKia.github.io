@@ -1,0 +1,168 @@
+/* Custom CSS for a more professional and minimalist website */
+
+/* Overall style improvements */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  background-color: #fff;
+}
+
+.page__content {
+  font-size: 1em;
+}
+
+/* Header styling */
+.masthead {
+  background-color: #fff;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.masthead__inner-wrap {
+  max-width: 1280px;
+}
+
+.greedy-nav {
+  background: #fff;
+}
+
+.greedy-nav a {
+  color: #2a76dd;
+}
+
+.greedy-nav a:hover {
+  color: #1c60c0;
+}
+
+.greedy-nav .visible-links a:before {
+  height: 2px;
+  background: #2a76dd;
+}
+
+/* Sidebar improvements */
+.author__avatar img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.author__name {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+.author__bio {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.sidebar .author__content {
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #2a76dd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1c60c0;
+  text-decoration: none;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #222;
+  margin-top: 1.5em;
+}
+
+h2 {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 0.5em;
+}
+
+/* Content containers */
+.page {
+  padding-right: 0;
+}
+
+.page__content {
+  padding: 0 10px;
+}
+
+.archive__item-title {
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+
+/* Publication items */
+.publication-item {
+  margin-bottom: 2em;
+  padding: 1.5em;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.publication-item:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Research items */
+.research-item {
+  margin-bottom: 3em;
+}
+
+.research-item h2 {
+  color: #2a76dd;
+  font-size: 1.5em;
+}
+
+.research-item img {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.page__footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #eaeaea;
+  color: #666;
+}
+
+.page__footer-copyright {
+  color: #888;
+}
+
+/* Responsive improvements */
+@media (min-width: 64em) {
+  .sidebar {
+    opacity: 1.0;
+    width: calc(250px - 1em);
+  }
+  
+  .page {
+    padding-right: 200px;
+    width: calc(100% - 250px);
+  }
+}
+
+/* List spacing */
+ul li, ol li {
+  margin-bottom: 0.5em;
+}
+
+/* Make content more readable */
+p {
+  margin-bottom: 1.5em;
+}
+
+/* Add a subtle animation to links */
+a {
+  transition: color 0.2s ease-in-out;
+} 

@@ -4,15 +4,145 @@ title: Publications
 permalink: /publications/
 ---
 
-<div class="publications-list" style="margin-left: 100px;"> <!-- Increased the left margin -->
-  <h1>{{ page.title }}</h1>
+<div class="publications-container">
+  <h1 class="page-title"><span class="section-icon">📚</span> Publications</h1>
+  
+  <p class="page-description">
+    A comprehensive list of my academic publications, including journal articles, conference papers, and preprints.
+    For citation metrics, please see my <a href="https://scholar.google.com/citations?user=1WWKzTEAAAAJ&hl=en&authuser=1">Google Scholar profile</a>.
+  </p>
 
-  {% assign sorted_publications = site.publications | sort: 'year' | reverse %} <!-- Sort publications by year in descending order -->
+  <div class="publication-filters">
+    <button class="filter-btn active" data-filter="all">All Publications</button>
+    <button class="filter-btn" data-filter="journal">Journal Articles</button>
+    <button class="filter-btn" data-filter="conference">Conference Papers</button>
+    <button class="filter-btn" data-filter="preprint">Preprints</button>
+  </div>
 
-  {% for publication in sorted_publications %}
-    <div class="publication-item" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin-bottom: 20px; border-radius: 8px;">
-      {{ publication.content | markdownify }} <!-- This renders the full content of each markdown file -->
-    </div>
-    <hr>
-  {% endfor %}
+  {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
+  
+  <div class="publications-list">
+    {% for publication in sorted_publications %}
+      <div class="publication-item" data-type="{{ publication.type | default: 'journal' }}">
+        {{ publication.content | markdownify }}
+      </div>
+    {% endfor %}
+  </div>
 </div>
+
+<style>
+  .publications-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  .page-title {
+    font-size: 2.2em;
+    color: #2a76dd;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  
+  .page-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+  }
+  
+  .section-icon {
+    margin-right: 0.5em;
+  }
+  
+  .publication-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2em 0;
+    gap: 0.5em;
+  }
+  
+  .filter-btn {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9em;
+  }
+  
+  .filter-btn:hover {
+    background-color: #e9e9e9;
+  }
+  
+  .filter-btn.active {
+    background-color: #2a76dd;
+    color: white;
+    border-color: #2a76dd;
+  }
+  
+  .publications-list {
+    margin-top: 2em;
+  }
+  
+  .publication-item {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 1.5em;
+    border-left: 4px solid #2a76dd;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .publication-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .publication-filters {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .filter-btn {
+      width: 80%;
+      margin-bottom: 0.5em;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const publicationItems = document.querySelectorAll('.publication-item');
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        const filter = this.getAttribute('data-filter');
+        
+        // Show/hide publications based on filter
+        publicationItems.forEach(item => {
+          if (filter === 'all') {
+            item.style.display = 'block';
+          } else {
+            if (item.getAttribute('data-type') === filter) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+  });
+</script>

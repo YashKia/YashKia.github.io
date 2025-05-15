@@ -1,28 +1,155 @@
 ---
 layout: default
-title: 
+title: Research
 permalink: /research/
 ---
 
-<div class="research-list">
-  <h1>{{ page.title }}</h1>
+<div class="research-container">
+  <h1 class="page-title"><span class="section-icon">🔬</span> Research Areas</h1>
+  
+  <p class="page-description">
+    My research spans several interdisciplinary areas, combining artificial intelligence, biomedical sensing, 
+    and signal processing to address critical healthcare challenges, particularly for neurological and developmental disorders.
+  </p>
 
-  {% for research in site.research %}
-    <div class="research-item">
-      <h2>{{ research.title }}</h2>
-      <p>{{ research.excerpt }}</p>
-
-      {{ research.content | markdownify }} <!-- This renders the full content of each markdown file -->
-
-      {% if research.related_publications %}
-        <h3>Related Publications</h3>
-        <ul>
-          {% for pub in research.related_publications %}
-            <li>{{ pub }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </div>
-    <hr>
-  {% endfor %}
+  <div class="research-grid">
+    {% for research in site.research %}
+      <div class="research-card" onclick="expandResearch(this)">
+        <div class="research-card-header">
+          <h2>{{ research.title }}</h2>
+        </div>
+        
+        <div class="research-card-content">
+          {{ research.content | markdownify }}
+          
+          {% if research.related_publications %}
+            <div class="related-publications">
+              <h3>Related Publications</h3>
+              <ul>
+                {% for pub in research.related_publications %}
+                  <li>{{ pub }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
+
+<style>
+  .research-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  .page-title {
+    font-size: 2.2em;
+    color: #2a76dd;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  
+  .page-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-icon {
+    margin-right: 0.5em;
+  }
+  
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5em;
+    margin-top: 2em;
+  }
+  
+  .research-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+  }
+  
+  .research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .research-card-header {
+    background-color: #2a76dd;
+    color: white;
+    padding: 1.5em 1em;
+  }
+  
+  .research-card-header h2 {
+    margin: 0;
+    font-size: 1.4em;
+    color: white;
+    border-bottom: none;
+  }
+  
+  .research-card-content {
+    padding: 1.5em;
+  }
+  
+  .research-card-content img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+  }
+  
+  .research-card-content p {
+    color: #555;
+  }
+  
+  .research-card.expanded {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+  
+  .related-publications {
+    margin-top: 1.5em;
+    padding-top: 1em;
+    border-top: 1px solid #eee;
+  }
+  
+  .related-publications h3 {
+    color: #2a76dd;
+    font-size: 1.2em;
+  }
+  
+  .related-publications ul {
+    padding-left: 1.5em;
+  }
+  
+  @media (max-width: 768px) {
+    .research-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  function expandResearch(card) {
+    // Toggle expanded class
+    card.classList.toggle('expanded');
+    
+    // Scroll to the card if it's expanded
+    if (card.classList.contains('expanded')) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+</script>
