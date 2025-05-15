@@ -13,7 +13,7 @@ permalink: /contact/
         <i class="fas fa-envelope"></i>
       </div>
       <h3>Email</h3>
-      <p><a href="mailto:yash@dbmi.emory.edu">yash@dbmi.emory.edu</a></p>
+      <p><a href="mailto:ykiaras@emory.edu">ykiaras@emory.edu</a></p>
     </div>
     
     <div class="contact-card">
@@ -85,7 +85,7 @@ permalink: /contact/
   
   .page-title {
     font-size: 2.2em;
-    color: #2a76dd;
+    color: #BDB5D5;
     margin-bottom: 1.5em;
     text-align: center;
   }
@@ -116,7 +116,7 @@ permalink: /contact/
   
   .contact-icon {
     font-size: 2.5em;
-    color: #2a76dd;
+    color: #BDB5D5;
     margin-bottom: 0.5em;
   }
   
@@ -131,7 +131,7 @@ permalink: /contact/
   }
   
   .contact-card a {
-    color: #2a76dd;
+    color: #BDB5D5;
     text-decoration: none;
   }
   
@@ -164,13 +164,13 @@ permalink: /contact/
   
   .profile-link:hover {
     transform: translateY(-5px);
-    color: #2a76dd;
+    color: #BDB5D5;
   }
   
   .profile-link i {
     font-size: 2.5em;
     margin-bottom: 0.5em;
-    color: #2a76dd;
+    color: #BDB5D5;
   }
   
   .collaboration-section {
