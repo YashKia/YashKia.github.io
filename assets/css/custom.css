@@ -29,6 +29,11 @@ body {
 .site-logo-img {
   margin-right: 10px;
   transition: transform 0.3s ease;
+  border-radius: 50%;
+  border: 2px solid var(--light-purple);
+  background-color: white;
+  padding: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .site-logo:hover .site-logo-img {
