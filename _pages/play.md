@@ -10,13 +10,8 @@ author_profile: true
   <div class="game-wrapper">
     <div id="dice-game">
       <div id="dice-container">
-        <div id="dice" class="dice">
-          <div class="face front">1</div>
-          <div class="face back">6</div>
-          <div class="face top">2</div>
-          <div class="face bottom">5</div>
-          <div class="face right">3</div>
-          <div class="face left">4</div>
+        <div id="dice">
+          <span id="dice-value">1</span>
         </div>
       </div>
       
@@ -77,55 +72,32 @@ author_profile: true
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 600px;
     margin-bottom: 20px;
   }
   
-  .dice {
-    position: relative;
+  #dice {
     width: 100px;
     height: 100px;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-  }
-  
-  .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: white;
-    border: 2px solid var(--darker-purple);
+    border: 2px solid #7D6E96;
     border-radius: 10px;
-    font-size: 3em;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 15px rgba(0,0,0,0.1);
+    font-size: 3em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
   }
   
-  .front {
-    transform: translateZ(50px);
+  #dice.rolling {
+    animation: roll-dice 0.5s ease;
   }
   
-  .back {
-    transform: translateZ(-50px) rotateY(180deg);
-  }
-  
-  .top {
-    transform: rotateX(-90deg) translateZ(50px);
-  }
-  
-  .bottom {
-    transform: rotateX(90deg) translateZ(50px);
-  }
-  
-  .right {
-    transform: rotateY(90deg) translateZ(50px);
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translateZ(50px);
+  @keyframes roll-dice {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
   }
   
   #game-info {
@@ -136,7 +108,7 @@ author_profile: true
   #roll-result {
     font-weight: bold;
     font-size: 1.5em;
-    color: var(--darker-purple);
+    color: #7D6E96;
   }
   
   #game-controls {
@@ -146,7 +118,7 @@ author_profile: true
   .game-btn {
     margin: 10px;
     padding: 10px 20px;
-    background-color: var(--darker-purple);
+    background-color: #7D6E96;
     color: white;
     border: none;
     border-radius: 5px;
@@ -157,7 +129,7 @@ author_profile: true
   }
   
   .game-btn:hover {
-    background-color: var(--darkest-purple);
+    background-color: #4A3A69;
   }
   
   .game-btn:disabled {
@@ -203,10 +175,9 @@ author_profile: true
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Dice game loaded');
-  
   // DOM elements
   const dice = document.getElementById('dice');
+  const diceValue = document.getElementById('dice-value');
   const rollResult = document.getElementById('roll-result');
   const scoreDisplay = document.getElementById('score');
   const targetScoreDisplay = document.getElementById('target-score');
@@ -229,7 +200,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Initialize the game
   function initGame() {
-    console.log('Initializing new game');
     playerScore = 0;
     computerScore = 0;
     rollCount = 0;
@@ -259,48 +229,47 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Generate random number 1-6
     currentRoll = Math.floor(Math.random() * 6) + 1;
-    console.log('Rolled:', currentRoll);
     
     // Animate dice
-    const rotX = Math.floor(Math.random() * 4) * 90;
-    const rotY = Math.floor(Math.random() * 4) * 90;
-    const rotZ = Math.floor(Math.random() * 4) * 90;
+    dice.classList.add('rolling');
     
-    dice.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg) rotateZ(${rotZ}deg)`;
-    
-    // Update displays after roll
-    rollResult.textContent = `You rolled: ${currentRoll}`;
-    
-    // Update score based on whose turn it is
-    if (isPlayerTurn) {
-      playerScore += currentRoll;
-      scoreDisplay.textContent = `Your score: ${playerScore}`;
+    // Update dice value after animation
+    setTimeout(() => {
+      dice.classList.remove('rolling');
+      diceValue.textContent = currentRoll;
       
-      // Check if player went over
-      if (playerScore > targetScore) {
-        endGame('player-bust');
-      } else if (playerScore === targetScore) {
-        endGame('player-win');
-      }
-    } else {
-      computerScore += currentRoll;
-      rollResult.textContent = `Computer rolled: ${currentRoll}`;
-      
-      // Check if computer went over
-      if (computerScore > targetScore) {
-        endGame('computer-bust');
-      } else if (computerScore === targetScore) {
-        endGame('computer-win');
-      } else if (computerScore >= playerScore || computerScore >= 17) {
-        // Computer holds at 17 or higher, or if they're beating the player
-        compareScores();
+      // Update displays after roll
+      if (isPlayerTurn) {
+        rollResult.textContent = `You rolled: ${currentRoll}`;
+        playerScore += currentRoll;
+        scoreDisplay.textContent = `Your score: ${playerScore}`;
+        
+        // Check if player went over
+        if (playerScore > targetScore) {
+          endGame('player-bust');
+        } else if (playerScore === targetScore) {
+          endGame('player-win');
+        }
       } else {
-        // Computer decides to roll again
-        setTimeout(rollDice, 1000);
+        rollResult.textContent = `Computer rolled: ${currentRoll}`;
+        computerScore += currentRoll;
+        
+        // Check if computer went over
+        if (computerScore > targetScore) {
+          endGame('computer-bust');
+        } else if (computerScore === targetScore) {
+          endGame('computer-win');
+        } else if (computerScore >= playerScore || computerScore >= 17) {
+          // Computer holds at 17 or higher, or if they're beating the player
+          compareScores();
+        } else {
+          // Computer decides to roll again
+          setTimeout(rollDice, 1000);
+        }
       }
-    }
-    
-    updateDisplays();
+      
+      updateDisplays();
+    }, 500);
   }
   
   // Player holds their score
@@ -374,29 +343,30 @@ document.addEventListener('DOMContentLoaded', function() {
         messageDisplay.classList.add('draw');
         break;
     }
-    
-    console.log('Game ended:', result);
   }
   
-  // Event listeners
-  rollBtn.addEventListener('click', function() {
-    console.log('Roll button clicked');
-    if (isPlayerTurn && !gameOver) {
-      rollDice();
-    }
-  });
+  // Add event listeners
+  if (rollBtn) {
+    rollBtn.addEventListener('click', function() {
+      if (isPlayerTurn && !gameOver) {
+        rollDice();
+      }
+    });
+  }
   
-  holdBtn.addEventListener('click', function() {
-    console.log('Hold button clicked');
-    if (isPlayerTurn && !gameOver) {
-      hold();
-    }
-  });
+  if (holdBtn) {
+    holdBtn.addEventListener('click', function() {
+      if (isPlayerTurn && !gameOver) {
+        hold();
+      }
+    });
+  }
   
-  newGameBtn.addEventListener('click', function() {
-    console.log('New game button clicked');
-    initGame();
-  });
+  if (newGameBtn) {
+    newGameBtn.addEventListener('click', function() {
+      initGame();
+    });
+  }
   
   // Initialize game on load
   initGame();
