@@ -8,9 +8,6 @@ redirect_from:
 ---
 
 <div class="about-container">
-  <h1 class="name-heading">Dr. Yashar Kiarashi</h1>
-  <p class="title-subheading">Postdoctoral Fellow in Biomedical Informatics, Emory University</p>
-
   <div class="research-overview">
     <h2><span class="section-icon">🔬</span> Research Overview</h2>
 
@@ -89,24 +86,19 @@ redirect_from:
 </div>
 
 <style>
+  /* Purple Color Spectrum */
+  :root {
+    --light-purple: #BDB5D5;     /* Light purple for backgrounds */
+    --medium-purple: #9E95B7;    /* Medium purple for hover states */
+    --darker-purple: #7D6E96;    /* Darker purple for text */
+    --darkest-purple: #4A3A69;   /* Darkest purple for emphasis */
+    --text-color: #333;          /* Black for regular text */
+    --light-text: #555;          /* Lighter black for secondary text */
+  }
+
   .about-container {
     max-width: 900px;
     margin: 0 auto;
-  }
-  
-  .name-heading {
-    font-size: 2.2em;
-    color: #702963;
-    margin-bottom: 0.1em;
-    text-align: center;
-  }
-  
-  .title-subheading {
-    font-size: 1.2em;
-    color: #666;
-    margin-top: 0;
-    text-align: center;
-    margin-bottom: 2em;
   }
   
   .section-icon, .area-icon {
@@ -114,6 +106,7 @@ redirect_from:
   }
   
   .research-overview {
+    margin-top: 1em;
     margin-bottom: 3em;
   }
   
@@ -126,12 +119,12 @@ redirect_from:
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 1.5em;
-    border-left: 4px solid #702963;
+    border-left: 4px solid var(--light-purple);
   }
   
   .research-area h4 {
     margin-top: 0;
-    color: #702963;
+    color: var(--darker-purple);
   }
   
   .news-section {
@@ -153,11 +146,20 @@ redirect_from:
   .news-date {
     min-width: 100px;
     font-weight: bold;
-    color: #555;
+    color: var(--light-text);
   }
   
   .news-content {
     flex: 1;
+    color: var(--text-color);
+  }
+
+  h2 {
+    color: var(--darker-purple);
+  }
+
+  h3 {
+    color: var(--darker-purple);
   }
   
   @media (max-width: 768px) {
