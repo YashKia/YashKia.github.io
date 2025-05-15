@@ -16,13 +16,13 @@ author_profile: true
       </div>
       
       <div id="game-info">
-        <p id="score-display">Your score: <span id="score">0</span></p>
+        <p>Your score: <span id="score">0</span></p>
         <p id="message">Roll the dice to start!</p>
       </div>
       
       <div id="game-controls">
-        <button id="roll-button" onclick="rollDice()">Roll Dice</button>
-        <button id="reset-button" onclick="resetGame()">New Game</button>
+        <button onclick="rollDice()">Roll Dice</button>
+        <button onclick="resetGame()">New Game</button>
       </div>
       
       <div id="game-rules">
@@ -117,12 +117,6 @@ author_profile: true
   var score = 0;
   var gameOver = false;
   
-  // DOM elements
-  var diceElement = document.getElementById('dice-value');
-  var scoreElement = document.getElementById('score');
-  var messageElement = document.getElementById('message');
-  var rollButton = document.getElementById('roll-button');
-  
   // Roll the dice function
   function rollDice() {
     if (gameOver) {
@@ -133,23 +127,23 @@ author_profile: true
     var roll = Math.floor(Math.random() * 6) + 1;
     
     // Update dice display
-    diceElement.textContent = roll;
+    document.getElementById('dice-value').textContent = roll;
     
     // Add to score
     score += roll;
-    scoreElement.textContent = score;
+    document.getElementById('score').textContent = score;
     
     // Check win/lose conditions
     if (score === 21) {
-      messageElement.textContent = "You win! Perfect 21!";
-      messageElement.style.color = "green";
+      document.getElementById('message').textContent = "You win! Perfect 21!";
+      document.getElementById('message').style.color = "green";
       gameOver = true;
     } else if (score > 21) {
-      messageElement.textContent = "You went over 21! Game over.";
-      messageElement.style.color = "red";
+      document.getElementById('message').textContent = "You went over 21! Game over.";
+      document.getElementById('message').style.color = "red";
       gameOver = true;
     } else {
-      messageElement.textContent = "You rolled a " + roll + ". Roll again or start a new game.";
+      document.getElementById('message').textContent = "You rolled a " + roll + ". Roll again or start a new game.";
     }
   }
   
@@ -157,14 +151,9 @@ author_profile: true
   function resetGame() {
     score = 0;
     gameOver = false;
-    diceElement.textContent = "1";
-    scoreElement.textContent = "0";
-    messageElement.textContent = "Roll the dice to start!";
-    messageElement.style.color = "#7D6E96";
+    document.getElementById('dice-value').textContent = "1";
+    document.getElementById('score').textContent = "0";
+    document.getElementById('message').textContent = "Roll the dice to start!";
+    document.getElementById('message').style.color = "#7D6E96";
   }
-  
-  // Initialize game when page loads
-  window.onload = function() {
-    resetGame();
-  };
 </script>
