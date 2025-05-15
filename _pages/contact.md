@@ -77,6 +77,14 @@ permalink: /contact/
 </div>
 
 <style>
+  /* Purple Color Spectrum */
+  :root {
+    --light-purple: #BDB5D5;     /* Light purple for backgrounds */
+    --medium-purple: #9E95B7;    /* Medium purple for hover states */
+    --darker-purple: #7D6E96;    /* Darker purple for text for better readability */
+    --darkest-purple: #4A3A69;   /* Darkest purple for emphasis */
+  }
+
   .contact-container {
     max-width: 800px;
     margin: 0 auto;
@@ -85,7 +93,7 @@ permalink: /contact/
   
   .page-title {
     font-size: 2.2em;
-    color: #BDB5D5;
+    color: var(--darker-purple);
     margin-bottom: 1.5em;
     text-align: center;
   }
@@ -116,23 +124,28 @@ permalink: /contact/
   
   .contact-icon {
     font-size: 2.5em;
-    color: #BDB5D5;
+    color: var(--light-purple);
     margin-bottom: 0.5em;
   }
   
   .contact-card h3 {
-    color: #333;
+    color: var(--darkest-purple);
     margin-bottom: 0.5em;
   }
   
   .contact-card p {
-    color: #666;
+    color: #555;
     line-height: 1.6;
   }
   
   .contact-card a {
-    color: #BDB5D5;
+    color: var(--darker-purple);
     text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contact-card a:hover {
+    color: var(--darkest-purple);
   }
   
   .profiles-section {
@@ -142,7 +155,7 @@ permalink: /contact/
   .profiles-section h2 {
     text-align: center;
     margin-bottom: 1.5em;
-    color: #333;
+    color: var(--darkest-purple);
   }
   
   .profiles-grid {
@@ -157,20 +170,20 @@ permalink: /contact/
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: #444;
     transition: transform 0.3s ease;
     width: 120px;
   }
   
   .profile-link:hover {
     transform: translateY(-5px);
-    color: #BDB5D5;
+    color: var(--darker-purple);
   }
   
   .profile-link i {
     font-size: 2.5em;
     margin-bottom: 0.5em;
-    color: #BDB5D5;
+    color: var(--light-purple);
   }
   
   .collaboration-section {
@@ -178,10 +191,11 @@ permalink: /contact/
     padding: 2em;
     border-radius: 8px;
     margin-top: 2em;
+    border-left: 4px solid var(--light-purple);
   }
   
   .collaboration-section h2 {
-    color: #333;
+    color: var(--darker-purple);
     margin-bottom: 1em;
   }
   
@@ -197,7 +211,7 @@ permalink: /contact/
   
   .contact-invitation {
     font-weight: 500;
-    color: #444;
+    color: var(--darkest-purple);
     text-align: center;
     margin-top: 1.5em;
   }
