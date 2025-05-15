@@ -19,6 +19,22 @@ body {
   background-color: #fff;
 }
 
+/* Logo styling */
+.site-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.site-logo-img {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.site-logo:hover .site-logo-img {
+  transform: scale(1.1);
+}
+
 .page__content {
   font-size: 1em;
 }
