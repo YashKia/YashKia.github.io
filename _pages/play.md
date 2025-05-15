@@ -44,9 +44,7 @@ author_profile: true
       
       <div id="instructions">
         <h2>How to Play</h2>
-        <p>Test your understanding of probability with fun challenges!</p>
-        <p>You'll face 10 probability-based scenarios with coins, dice, and cards.</p>
-        <p>Make predictions based on probability theory and see how many you get right.</p>
+        <p>Let's have some fun!</p>
       </div>
       
       <div id="result" style="display: none;"></div>
@@ -386,6 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Initialize the game
   function initGame() {
+    console.log('Game initializing...');
     score = 0;
     currentRound = 0;
     gameActive = true;
@@ -396,17 +395,22 @@ document.addEventListener('DOMContentLoaded', function() {
     instructions.style.display = 'none';
     gameBoard.style.display = 'flex';
     
+    console.log('Starting first challenge...');
     nextChallenge();
+    console.log('Game initialized');
   }
   
   // Generate the next challenge
   function nextChallenge() {
+    console.log('Next challenge called, current round:', currentRound);
     if (currentRound >= totalRounds) {
+      console.log('All rounds complete, ending game');
       endGame();
       return;
     }
     
     currentRound++;
+    console.log('Advancing to round:', currentRound);
     resultDisplay.style.display = 'none';
     nextBtn.style.display = 'none';
     
@@ -417,6 +421,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Randomly select a challenge type
     const challengeType = challengeTypes[Math.floor(Math.random() * challengeTypes.length)];
+    console.log('Selected challenge type:', challengeType);
     generateChallenge(challengeType);
   }
   
@@ -563,6 +568,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // After a delay, check the answer
     setTimeout(checkAnswer, 1500);
+    
+    // Add console logging for debugging
+    console.log('Option selected:', option);
   }
   
   // Animation functions
@@ -638,7 +646,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // Event listeners
-  startBtn.addEventListener('click', initGame);
-  nextBtn.addEventListener('click', nextChallenge);
+  startBtn.addEventListener('click', function() {
+    console.log('Start button clicked');
+    initGame();
+  });
+  
+  nextBtn.addEventListener('click', function() {
+    console.log('Next button clicked');
+    nextChallenge();
+  });
+  
+  // Debug log on page load
+  console.log('Probability game script loaded');
 });
 </script>
