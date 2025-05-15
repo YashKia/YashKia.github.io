@@ -1,26 +1,31 @@
 ---
-title: "Guest Lectures"
+title: "Guest Lectures in Biomedical Sensing and AI"
 collection: teaching
-type: "Graduate course"
-permalink: /teaching/2023-guest-lecture
-venue: "Emory University, Department of Biomedical Informatics"
+type: "Guest lectures and invited talks"
+permalink: /teaching/guest-lectures
+venue: "Emory University and Research Conferences"
 date: 2023-01-15
 location: "Atlanta, Georgia"
 ---
 
-## Guest Lectures and Workshops
+## Recent Guest Lectures and Research Presentations
 
-### Applied Machine Learning for Healthcare
-* Graduate-level guest lecture on using deep learning for physiological signal processing
-* Covered implementation of CNN and RNN architectures for time series health data
-* Practical workshop on deploying AI models in resource-constrained healthcare environments
+### Sleep Architecture and Behavior Patterns in Autism
+* CTSA Lunch and Learn Series at Emory University (2025)
+* Presented research on predicting challenging behaviors in children with autism through sleep analysis
+* Demonstrated novel methodological approach using non-intrusive sensing technology and privacy-preserving edge computing
 
-### Wearable Technology and Edge Computing in Clinical Research
-* Technical seminar for graduate biomedical engineering students
-* Topics included sensor data collection, validation, and preprocessing
-* Hands-on demonstration of privacy-preserving edge computing for health monitoring
+### Novel Sensing Technologies for Neurological Disorders
+* NeuroNext Research Symposium, Atlanta (2024)
+* Overview of research program on developing sensing technologies and AI-driven analytics
+* Discussed multi-modal approach to biomarker discovery combining wearable sensors and environmental monitoring
 
-### AI Ethics in Healthcare Applications
-* Interdisciplinary workshop for clinical researchers and data scientists
-* Discussion of bias, fairness, and transparency in health AI systems
-* Case studies on responsible AI implementation in vulnerable populations 
+### Knowledge Discovery in Nanophotonics
+* SPIE Photonics West Meeting, San Francisco (2021)
+* Presented machine learning approaches for inverse design in nanophotonics
+* Demonstrated dimensionality reduction techniques for understanding photonic nanostructures
+
+### AI Techniques for Electromagnetic Nanostructures
+* 6th World Congress on EECSS (2020)
+* Presented artificial intelligence methods for design and knowledge discovery
+* Discussed deep learning and machine learning approaches in reduced-dimensionality spaces 

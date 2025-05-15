@@ -11,41 +11,43 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Electrical and Computer Engineering, Georgia Institute of Technology, 2022
-* B.S. in Electrical Engineering, University of Technology, 2016
+* Ph.D. in Electrical and Computer Engineering, Georgia Institute of Technology, 2016-2021
+* M.Sc. in Electrical and Computer Engineering, Georgia Institute of Technology, 2016-2018
+* M.Sc. in Electrical and Computer Engineering, Shiraz University, 2012-2014
+* B.Sc. in Electrical and Computer Engineering, Shiraz University, 2008-2012
 
 Academic Appointments
 ======
-* 2022-Present: Postdoctoral Fellow
+* 2021-Present: Postdoctoral Fellow
   * Emory University, Department of Biomedical Informatics
   * Clifford Lab
   * Research focus: AI-driven methods for improving health and healthcare, wearable sensing technologies for neurological disorders
 
 Research Experience
 ======
-* 2022-Present: Postdoctoral Researcher
-  * Emory University, Clifford Lab
+* 2021-Present: Postdoctoral Researcher - Emory University, Atlanta, GA
+  * Advisor: Prof. Gari Clifford
   * Projects: 
-    * Detecting cognitive markers in older adults at risk for Mild Cognitive Impairment
-    * Sleep and behavior analysis in children with autism spectrum disorder
-    * Development of edge computing systems for privacy-focused health monitoring
-  * Collaborations: Cognitive Empowerment Program, Goizueta Alzheimer's Disease Research Center, The Center for Discovery
+    * Goizueta Alzheimer's Disease Research Center: Using wearable technologies including in-ear EEG and health monitoring wristbands to explore links between sleep patterns and Alzheimer's disease
+    * Charlie and Harriet Shaffer Cognitive Empowerment Program: Analyzing the association of cognitive profiles and mild cognitive impairment with movement data and sleep patterns
+    * The Center for Discovery: Predicting adverse behavior in children with Autism spectrum disorder through off-body sleep analysis
+    * George B. Moody PhysioNet Challenge: Co-organizing the challenge on Heart Murmur Detection from phonocardiogram recordings
+    * NextSense: Assessing the effects of acoustic stimulation during sleep
 
-* 2017-2022: Graduate Research Assistant
-  * Georgia Institute of Technology
-  * Research focus: Knowledge discovery in nanophotonics using dimensionality reduction and explainable AI models
+* 2016-2021: Research Assistant - Georgia Institute of Technology
+  * Advisor: Prof. Ali Adibi
+  * Research focus: Machine learning-assisted optimization and knowledge discovery in nanophotonics using deep learning, manifold learning, dimensionality reduction, and metric learning
 
-Grants and Funding
-======
-* 2024-2027: Thrasher Research Fund Early Career Award
-  * Project: "Enhancing Behavioral Understandings and Interventions in Children with Autism Spectrum Disorder using Artificial Intelligence"
+* Summer 2020: Internship - Flatiron Institute, Simons Foundation, New York City, NY
+  * Advisors: Prof. Leslie Greengard and Prof. Mitya Chklovskii
+  * Project: Modeling the temporal, spatial, and spectral sensitivity of the mini-wasp compound eye
 
 Technical Skills
 ======
-* Programming Languages: Python, MATLAB, R
 * Machine Learning: Deep learning, explainable AI, dimensionality reduction
-* Data Analysis: Statistical analysis, signal processing, time series analysis
-* Hardware: Wearable sensors, edge computing, IoT devices
+* Mathematical Modeling: Signal processing, time series analysis, statistical analysis
+* Biomedical Sensing: Wearable technology, edge computing, IoT devices
+* Programming: Python, MATLAB, R
 
 Publications
 ======
@@ -59,8 +61,26 @@ Talks & Presentations
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
+Teaching and Mentorship
+======
+* Teaching:
+  * Sleep and High‑Risk Behaviors in Profound Autism (Spring 2025)
+  * Electromagnetic, Circuit Theory, and Electronics (2016-2019)
+  * Basic Circuit Theory, Logic Circuits Lab, Image Processing and Pattern Recognition (2010-2014)
+
+* Mentorship:
+  * Mentoring graduate and undergraduate students in biomedical sensing at Emory (2021-2025)
+  * Mentoring 50+ graduate and undergraduate students on research projects as part of the AI-based Discovery and Innovation V.I.P. Group (2019-2021)
+
+Awards
+======
+* Thrasher Early Career Award (2024)
+
 Professional Service
 ======
-* Reviewer for IEEE Journal of Biomedical and Health Informatics
-* Reviewer for Physiological Measurements
-* Member, IEEE Engineering in Medicine and Biology Society
+* Program committee member for Computing in Cardiology conference (CinC) (2022-2024)
+* Guest Editor of Journal of Nanophotonics (2021-2023)
+* Treasury officer of the Optical Society of America at Georgia Tech (2018-2021)
+* Reviewer of 50+ articles for scientific peer-reviewed journals (2017-Present)
+* Member, Optical Society of America (OSA) (2017-Present)
+* Member, Society of Photo-Optical Instrumentation Engineers (SPIE) (2017-Present)

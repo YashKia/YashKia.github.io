@@ -10,7 +10,7 @@ redirect_from:
 ## Research Overview
 
 <div style="text-align: justify;"> 
-As a postdoctoral researcher at the <a href="https://gdclifford.info/gari">Clifford Lab</a> at Emory University, my research focuses on developing novel AI-driven methods and sensing technologies to address critical challenges in healthcare, particularly for neurological and developmental disorders. My interdisciplinary approach combines expertise in artificial intelligence, wearable sensing, and signal processing to create tools that can improve patient outcomes through early detection and personalized interventions.
+As a postdoctoral researcher at the <a href="https://gdclifford.info/gari">Clifford Lab</a> at Emory University, my research focuses on developing novel AI-driven methods and sensing technologies to address critical challenges in healthcare, particularly for neurological and developmental disorders. My interdisciplinary approach combines expertise in artificial intelligence, biomedical sensing, and signal processing to create tools that can improve patient outcomes through early detection and personalized interventions.
 
 My current research program focuses on three interconnected areas:
 
@@ -18,9 +18,9 @@ My current research program focuses on three interconnected areas:
 
 2) **Privacy-Preserving Sensing for Neurodevelopmental Disorders**: In collaboration with <a href="https://thecenterfordiscovery.org">The Center for Discovery</a>, I am researching the relationship between sleep patterns and behavioral outcomes in children with autism spectrum disorder. This work involves building an end-to-end edge computing system using off-body sensors that prioritizes privacy while extracting meaningful behavioral insights.
 
-3) **Explainable AI for Healthcare Applications**: Building on my PhD research in knowledge discovery using dimensionality reduction at Georgia Tech, I develop interpretable machine learning models that balance predictive power with clinical explainability, allowing healthcare providers to understand and trust AI-driven recommendations.
+3) **AI-Driven Pattern Recognition for Health Monitoring**: Building on my PhD research in knowledge discovery at Georgia Tech, I develop interpretable machine learning models for biomedical applications. This includes work on the <a href="https://moody-challenge.physionet.org/2022/">George B. Moody PhysioNet Challenge</a>, co-organizing a challenge with over 80 participants on heart murmur detection from phonocardiogram recordings.
 
-My research is characterized by a commitment to creating practical solutions that can be deployed in real-world clinical settings while maintaining privacy, ethics, and equity as core principles. Through my work, I aim to bridge the gap between cutting-edge technology and healthcare needs, particularly for vulnerable and underserved populations.
+Before joining Emory, I completed my PhD at Georgia Tech (2016-2021) where I focused on machine learning-assisted optimization and knowledge discovery in nanophotonics. My doctoral research developed new approaches using deep learning, manifold learning, and dimensionality reduction to better understand light-matter interactions.
 </div>
 
 ## Recent News

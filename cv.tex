@@ -1,0 +1,784 @@
+\documentclass[margin, line]{res}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage{setspace}                                    % Allows for custom margins, etc.
+\usepackage{amssymb}
+\usepackage{fullpage}                                    % Use the full page
+\usepackage[latin9]{inputenc}                            % Font definition and input type
+\usepackage[T1]{fontenc}                                 % Font output type 
+\usepackage{mmap}                                        % Allows glyphs (e.g. ff) to copy properly (ASCII)
+\usepackage{textcomp}                                    % Supports many symbols such as copyright
+\usepackage{color}                                       % Allow for colored text, etc.
+\usepackage{multicol}
+\usepackage[a4, portrait, margin=1in]{geometry}
+\usepackage[]{hyperref}                                  % Allow hyperlinks (internal and external)
+\hypersetup{                                             % Custom hyperlink settings
+    pdffitwindow=false,                                  % Window fit to page when opened
+    pdfstartview={XYZ null null 1.00},                   % Fits the zoom of the page to 100%
+    pdfnewwindow=true,                                   % Links in new window
+    colorlinks=true,                                     % false: boxed links; true: colored links
+    linkcolor=black,                                     % Color of internal links (black is necessary for printing quality)
+    citecolor=black,                                     % Color of links to bibliography
+    urlcolor=black,                                      % Color of external links
+    pdfauthor = {Your Name},
+    pdfkeywords = {Your Keywords},
+    pdftitle = {Your Name: Curriculum Vitae},
+    pdfsubject = {Curriculum Vitae},
+    pdfpagemode = UseNone}
+    
+\oddsidemargin -0.7in
+\evensidemargin -.5in
+\textwidth=6.3in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight}
+
+	\addtolength{\topmargin}{-.3in}
+	\addtolength{\textheight}{0.6in} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+      
+\usepackage{fancyhdr}                                    % Used for custom page headers
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt} 
+\rhead{\footnotesize  \thepage} %header at the right
+\headsep = 0.5cm
+% FIRST PAGE ONLY (redefine the plain pagestyle)
+\fancypagestyle{plain}{
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} 
+\headsep = 0.0cm
+
+}
+
+
+\begin{document}
+%	 \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+
+\vspace*{-.35in} \name{  \hspace{0cm}{\LARGE Yashar Kiarashi} \vspace*{0.1in}}
+
+\begin{resume}
+\thispagestyle{plain} % to use first page footer
+% \vspace{-3mm}
+\section{\sc \textbf{\large{Contact Information}}}
+\vspace{.05in}
+\begin{tabular}{@{}p{0.20in}p{3in}p{2.75in}}
+ & Postdoctoral Fellow & \href{https://scholar.google.com/citations?user=1WWKzTEAAAAJ} {\textcolor{blue}{Google Scholar}} \\
+&Emory School of Medicine & \href{https://yashkia.github.io}{\textcolor{blue}{Website}} \\
+ & Department of Biomedical Informatics & E-mail: {ykiaras@emory.edu} \\
+ &101 Woodruff Cir, Atlanta, GA 30322& Cell: (470) . 655 . 9095\\
+
+
+ 
+\end{tabular}
+% \usepackage{multicol}
+% \vspace{-3.5mm}
+% \section{\sc\textbf{\large{Summary}}}
+% % \item Inverse Problem:\\
+% \vspace{0mm}
+
+% \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+% \item Strong background in Computational Science, Mathematical Modeling, and Statistics with +7 years of experience in interdisciplinary research. Proficient in large-scale optimization, machine learning, and algorithmic techniques to deliver
+% insights and develop innovative solutions for complex problems. Communicated insights to different audiences in 15+ empirical research papers, 10+ presentations at scientific conferences, and 10+ interviews at news outlets.
+
+
+
+% \item Mathematical Modeling
+
+% \item Optical Computing 
+
+
+% \item Quantitative Finance
+% \item Geometric Learning
+% \item Metasurface Design
+% \item Deep Learning
+
+% \item Machine Learning
+% \item Signal Processing
+% \item Biomedical Engineering
+% \item Artificial Intelligence
+
+
+
+
+% \item Optical Computing
+
+
+% \item Unsupervised Learning
+% \item On-chip Neural Networks
+
+
+
+
+
+\begin{itemize}
+\renewcommand\labelitemi{\scriptsize$\blacksquare$}
+
+% \item Optical Computing
+% \item Dynamical Systems
+% \item Optimization
+% \item temporal systems
+% \item Statistical Learning
+
+
+% \item Temporal Modeling
+% \item Recurrent Neural Networks
+% \item Probabilistic Graphical Models
+% \item Optical Ensemble Learning
+\end{itemize}
+\vspace{-3mm}
+\section{\sc\textbf{\large{Expertise}}}
+\begin{list1}
+    \item[] Machine Learning, Mathematical Modeling, Biomedical Sensing, Signal Processing
+\end{list1}
+%\item Machine Learning, Deep Learning, Mathematical Modeling, and Unsupervised Learning.
+
+
+\section{\sc \textbf{\large{Education}}}
+\begin{list1}
+	\item[] \textbf{PhD, Georgia Institute of Technology, Atlanta, GA} \hspace*{\fill}
+	2016 - 2021
+	\item[]School of Electrical and Computer Engineering
+%     \begin{itemize}
+% 	 \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+% 	 \item Ph.D. in Biomedical Informatics, School of Medicine
+% 	 \end{itemize}
+		% \item[] PhD with focus on \href{https://www.nature.com/articles/s41524-020-0276-y}{{\textcolor{blue}{dimensionality reduction}}} and modeling of the light-matter interaction.
+			% \item[] Thesis: A new paradigm for knowledge discovery and design in nanophotonics based on artificial intelligence. Advisor: Prof. Ali Adibi.
+			\item[] \textbf{MSc, Georgia Institute of Technology, Atlanta, GA}\hspace*{\fill}2016 - 2018 \item[]School of Electrical and Computer Engineering
+%\vspace{0.15cm}
+%		\item[] MSc with focus on designing the nanostructures using AI. 
+%		\item[] Minor in Mathematics with focus on Dynamical System Analysis.
+%		\begin{list2}
+%			\item[] Advisor: Prof. Ali Adibi
+%		\end{list2}
+
+\item[] \textbf{MSc, Shiraz University, Shiraz, Iran} \hspace*{\fill} 2012 - 2014
+\item[]School of Electrical and Computer Engineering
+% \vspace{0.15cm}
+% \item[] MSc with focus on image processing.
+% % \textbf{GPA: 3.80/4.00}
+% \begin{list2}
+% \item []Thesis: Quality Enhancement of Face Images. 
+% \item[] Advisor: Prof. Mehran Yazdi\\
+% % \item[] Co-supervisor: Prof. Zahra Kavehvash
+% \end{list2}
+\item[] \textbf{BSc, Shiraz University, Shiraz, Iran} \hspace*{\fill}2008 - 2012
+\item[]School of Electrical and Computer Engineering
+% \vspace{0.15cm}
+% \item[] BSc with focus on image %%https://www.advancedsciencenews.com/can-ai-solve-the-mysteries-of-photonic-nanostructures/
+%	\item[] \textbf{Georgia Institute of Technology, Atlanta, GA}\hspace*{\fill}August 2016 - May 2019 
+%	\item[]School of Electrical and Computer Engineering
+%\vspace{0.15cm}
+%		\item[] MSc with focus on designing the nanostructures using AI. 
+%		\item[] Minor in Mathematics with focus on Dynamical System Analysis.
+%		\begin{list2}
+%			\item[] Advisor: Prof. Ali Adibi
+%		\end{list2}
+
+% \item[] \textbf{Shiraz University, Shiraz, Iran} \hspace*{\fill}Fall 2012 - Fall 2014
+% \item[]School of Electrical and Computer Engineering
+% \vspace{0.15cm}
+% \item[] MSc with focus on image processing.
+% % \textbf{GPA: 3.80/4.00}
+% \begin{list2}
+% \item []Thesis: Quality Enhancement of Face Images. 
+% \item[] Advisor: Prof. Mehran Yazdi\\
+% % \item[] Co-supervisor: Prof. Zahra Kavehvash
+% \end{list2}
+% \item[] \textbf{Shiraz University, Shiraz, Iran} \hspace*{\fill}Fall 2008 - Fall 2012
+% \item[]School of Electrical and Computer Engineering
+% \vspace{0.15cm}
+% \item[] BSc with focus on image processing.
+\end{list1}
+
+\begin{itemize}
+\renewcommand\labelitemi{\scriptsize$\blacksquare$}
+
+
+\end{itemize}
+\section{\sc  \textbf{\large{Experiences}}}
+
+\begin{list1}
+
+\item[] \textbf{Post Doctoral Fellow - Emory University , Atlanta, GA}\hspace*{\fill} October 2021 - Present
+\item[]Advisor: Prof. Gari Clifford
+
+			\begin{itemize}
+            \item \href{https://alzheimers.emory.edu}{{\textcolor{blue}{Goizueta Alzheimer's Disease Research Center}}}. Exploring how changes in sleep patterns are linked to Alzheimer’s disease by using wearable technologies, including in-ear EEG and health monitoring wristbands.
+		   	\item \href{https://empowerment.emory.edu}{{\textcolor{blue}{Charlie and Harriet Shaffer Cognitive Empowerment Program}}}. Analyzing the association of cognitive profiles and mild cognitive impairment with movement data and sleep patterns.
+      \begin{itemize}
+      \begin{itemize}
+
+
+          % \item[$\circ$] Collected multimodal movement data from 90+ participants.
+          % \item[$\circ$] Reprocessed the noisy data using band-pass filtering and spike removal.
+          % \item[$\circ$] Predicted the movement using Kalman filtering.
+          % \item[$\circ$] Modeled the transitions using HMM.
+      \end{itemize}
+            \end{itemize}
+		   	
+		   	%Assessing cognitive profile of participants with mild cognitive impairment using wearable and nearable sensors.\\ 
+		   	%The main pillars of this work are using Kalman filtering to predict the movement and modeling the transition entropies using Hidden Markov Models (HMM).
+		  % 	\begin{itemize}
+		  % 	    \item Developed a team of AI researchers and software developers
+		  % 	    \item Oversaw completion of 10+ qualitative and quantitative projects
+		  % 	\end{itemize}
+		   	\item  \href{https://thecenterfordiscovery.org}{{\textcolor{blue}{The Center for Discovery}}}. Predicting adverse behavior in children with Autism spectrum disorder through off-body sleep analysis.
+          \begin{itemize}
+          \begin{itemize}
+
+
+        % \item[$\circ$] Collected sound, temperature, humidity, and movement time-series data.
+        % \item[$\circ$] Preprocessed data and applied data imputations techniques to compensate missing values.
+        % \item[$\circ$] Extracted time-frequency features.
+        % \item[$\circ$] Predicted the behaviors using LSTM, Random Forest, and Gradient Boosting methods.
+    \end{itemize}
+              \end{itemize}
+		  %  \item Mathematical Modeling of Nanostructures for Optical Neural Network.
+		  \item  \href{https://moody-challenge.physionet.org/2022/}{{\textcolor{blue}{George B. Moody PhysioNet}}}. Co-organizing the challenge with +80 participants and +600 algorithms/submissions on Heart Murmur Detection from phonocardiogram recordings.
+    % \item Exploring the impact of acoustic stimulation on sleep quality.
+    \item \href{https://www.nextsense.io}{{\textcolor{blue}{NextSense}}}. Assessing the effects of acoustic stimulation during sleep on sleep-related changes in objective and subjective measures of sleep quality, alertness and mood.
+    \item Activity classification from 3D accelerometry and its impact on biometric data in an ambulatory setting.
+    % in adults with habitually mildly sleep restricted schedules.
+    \end{itemize}
+
+\item[] \textbf{Research Assistant - Georgia Institute of Technology}\hspace*{\fill} 2016 - August 2021
+\item[]Advisor: Prof. Ali Adibi
+\begin{itemize}
+  		\item Machine learning-assisted optimization and knowledge discovery in nanophotonics using deep learning, manifold learning, dimensionality reduction, and metric learning.
+        \item Developed a new computing architecture utilizing an array of weak optical perceptrons.
+        \item Machine learning-assisted diagnosis of lung disease in radiology and reducing the reader variability through human-machine cooperation using confidence-aware deep learning, active learning, interpretable models.
+
+		  \end{itemize}
+
+
+\item[] \textbf{Internship - Flatiron Institute, Simons Foundation, New York City, NY}\hspace*{\fill} Summer 2020
+	\item[]Advisors: Prof. Leslie Greengard and Prof. Mitya Chklovskii
+			\begin{itemize}
+		    \item Modeling the temporal, spatial, and spectral sensitivity of the mini-wasp compound eye. 
+		  
+		\end{itemize}
+
+
+% \textbf{Machine Learning Researcher Intern - Siemens Healthineers}\hspace*{\fill} Summer 2022
+% 	\item[]Advisors: Dr. Sai Rapaka and Dr. Puneet Sharma
+% 			\begin{itemize}
+% 		    \item Diagnosis and prognosis of Cardiotoxicity in breast cancer patients from chest CTs using machine learning models. 
+			  
+		  
+% 		\end{itemize}
+  
+
+
+\end{list1}
+
+
+\vspace{-0.18cm}
+
+\section{\sc \textbf{\large{Publications}}}
+\begin{list1}
+\item[] \textbf{Journal Papers and Preprints}
+\begin{itemize}
+    \item [21]  \textbf{Y. Kiarashi}, J. Lantz, M. Reyna, C. Anderson, A. Rad, J. Foster, T. Villavicencio, T.  Hamlin, and G. Clifford . "Predicting Seizure Episodes and High-Risk Events in Autism Through Adverse Behavioral Patterns," Physiological Measurements (2024). \href{https://iopscience.iop.org/article/10.1088/1361-6579/adcafd/meta}{\textcolor{blue}{[pdf]}}
+    \item [20]   A. Bahrami, T. Villavicencio, \textbf{Y. Kiarashi}, C. Anderson, J. Foster, H. Kwon, T. Hamlin, J. Lantz, and G. D. Clifford. "From motion to emotion: exploring challenging behaviors in autism spectrum disorder through analysis of wearable physiology and movement," Physiological Measurement  (2025). \href{https://iopscience.iop.org/article/10.1088/1361-6579/ada51b/meta}{\textcolor{blue}{[pdf]}}
+    
+    \item [19]   C. Hedge, \textbf{Y. Kiarashi}, D. Rodriguez, A. Levey, H. Kwon, and G. Clifford. "Feasibility of assessing cognitive impairment via distributed camera network and privacy-preserving edge computing," Alzheimer's \& Dementia: Diagnosis, Assessment \& Disease Monitoring (2025). \href{https://arxiv.org/abs/2408.10442}{\textcolor{blue}{[pdf]}}
+    
+    \item [18]  M.A. Reyna, J. Weigle, Z.Koscova, K. Campbell, K.K. Shivashankara, S. Saghafi, S. Nikookar, M. Motie-Shirazi, \textbf{Y. Kiarashi}, S. Seyedi, G.D. Clifford, and R. Sameni. ECG-Image-Database: A Dataset of ECG Images with Real-World Imaging and Scanning Artifacts; A Foundation for Computerized ECG Image Digitization and Analysis. arXiv preprint arXiv:2409.16612 (2024). \href{https://arxiv.org/abs/2409.16612}{\textcolor{blue}{[pdf]}}
+
+    \item [17]  \textbf{Y. Kiarashi}, P. Suresha, A. Rad, M. Reyna, C. Anderson, J. Foster, J. Lantz, T. Villavicencio, T.  Hamlin, and G. Clifford . "Predicting Adverse Behavior in Individuals with Autism Spectrum Disorder Through Off-body Sleep Analysis," IEEE Journal of Biomedical and Health Informatics (2023). \href{https://ieeexplore.ieee.org/abstract/document/10669162}{\textcolor{blue}{[pdf]}}
+
+    \item [16]  \textbf{Y. Kiarashi}, S. Saghafi, B. Das, C. Hegde, V. Madala, A. Nakum, R. Singh, R. Tweedy, M. Doiron, A. Rodriguez, A. Levey, G. Clifford, and H. Kwon. "Graph Trilateration for Indoor Localization in Sparsely Distributed Edge and Cloud Computing Environments Using Bluetooth Technology," sensors (2023). \href{https://www.mdpi.com/1424-8220/23/23/9517}{\textcolor{blue}{[pdf]}}
+
+    \item [15]  C. Hedge, \textbf{Y. Kiarashi}, D. Rodriguez, A. Levey, M. Doiron, H. Kwon, and G. Clifford. "Indoor Group Identification and Localization Using Privacy-preserving Edge Computing Distributed Camera Network," IEEE Journal of Indoor and Seamless Positioning and Navigation (2024). \href{https://ieeexplore.ieee.org/abstract/document/10400779}{\textcolor{blue}{[pdf]}}
+
+
+     \item [14]  M. Reyna, \textbf{Y. Kiarashi}, A. Elola, J. Oliveira, F. Renna, A. Gu, E. Alday, N. Sadr, A. Sharma, J. Kpodonu, S. Mattos, M. Coimbra, R. Sameni, A. Rad, and G. Clifford. "Heart murmur detection from phonocardiogram recordings: The George B. Moody PhysioNet Challenge 2022," PLOS Digital Health (2023). \href{https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000324}{\textcolor{blue}{[pdf]}}
+
+    \item [13]  \textbf{Y. Kiarashi}, C. Hedge, V. Madala, A. Nakum, R. Singh, R. Tweedy, G. Clifford, and H. Kwon. "Indoor Localization using Bluetooth and Inertial Motion Sensors in Distributed Edge and Cloud Computing Environment," Preprint (2023). \href{https://arxiv.org/abs/2305.19342}{\textcolor{blue}{[pdf]}}
+
+    \item [12]  H. Kwon, C. Hedge, \textbf{Y. Kiarashi}, V. Madala, R. Singh, A. Nakum, R. Tweedy, L. Tonetto, C. Zimring, and G .Clifford. "Indoor Localization and Multi-person Tracking Using Privacy Preserving Distributed Camera Network with Edge Computing," IEEE Journal of Indoor and Seamless Positioning and Navigation (2023). \href{https://ieeexplore.ieee.org/abstract/document/10329418}{\textcolor{blue}{[pdf]}}
+    
+    \item [11] M. Zandehshahvar, \textbf{Y. Kiarashi}, M. Zhu, D. Bao, M. Javani, R. Pourabolghasem, and Ali Adibi. "Metric Learning: Harnessing the Power of Machine Learning in Nanophotonics," ACS Photonics (2023). \href{https://pubs.acs.org/doi/abs/10.1021/acsphotonics.2c01331}{\textcolor{blue}{[pdf]}}
+    
+    \item [10] M. van Assen, M. Zandehshahvar, H. Maleki, \textbf{Y. Kiarashi}, T. Arleo, A. Stillman, P. Filev, A. Davarpanah, E. Berkowitz, S. Tigges, S. Lee, B.  Vey, A. Adibi, and C. De Cecco. "COVID-19 Pneumonia Chest X-ray (CXR) Severity Score: Variability Assessment among Experienced and In-training Radiologists and Creation of a Multi-reader Composite Score Database for Artificial Intelligence Algorithm Development," European Journal of Radiology (2022). \href{https://www.birpublications.org/doi/full/10.1259/bjr.20211028}{\textcolor{blue}{[pdf]}}
+    \item [9] M. Zandehshahvar, \textbf{Y. Kiarashi}, M. Zhu, H. Maleki, T. Brown, and Ali Adibi. "Manifold Learning for Knowledge Discovery and Intelligent Inverse Design of Photonic Nanostructures: Breaking the Geometric Complexity," ACS Photonics (2022). \href{https://pubs.acs.org/doi/full/10.1021/acsphotonics.1c01888}{\textcolor{blue}{[pdf]}}
+    
+    \item [8] M. Zandehshahvar, \textbf{Y. Kiarashi}, M. Chen, R. Barton, and A. Adibi. "Inverse Design of Photonic Nanostructures using Dimensionality Reduction: Reducing the Computational Complexity," Optics Letters (2021). \href{https://www.osapublishing.org/viewmedia.cfm?r=1&rwjcode=ol&uri=ol-46-11-2634&html=true}{\textcolor{blue}{[pdf]}}
+    
+    \item [7] M. Zandehshahvar, M. van Assen, H. Maleki, \textbf{Y. Kiarashi}, C. N. De Cecco, and Ali Adibi. "Toward Understanding COVID-19 Pneumonia: A Deep-learning-based Approach for Severity Analysis and Monitoring the Disease," Nature Scientific Reports (2021). \href{https://www.nature.com/articles/s41598-021-90411-3}{\textcolor{blue}{[pdf]}}
+    
+    
+    \item [6] \textbf{Y. Kiarashi}, M. Zandehshahvar, S. Abdollahramezani, O. Hemmatyar, R. Pourabolghasem, and A. Adibi. "Knowledge Discovery in Nanophotonics using Geometric Deep Learning," Advanced Intelligent Systems (2020). (\textit{Covered by Advanced Science News}) \href{https://onlinelibrary.wiley.com/doi/pdf/10.1002/aisy.201900132}{\textcolor{blue}{[pdf]}}\href{https://www.advancedsciencenews.com/can-ai-solve-the-mysteries-of-photonic-nanostructures/}{\textcolor{blue}{[News]}}
+    
+    \item [5] S. Abdollahramezani, O. Hemmatyar, M. Taghinejad, H. Taghinejad, \textbf{Y. Kiarashi}, M. Zandehshahvar, T. Fan, S. Deshmukh, A. Eftekhar, W. Cai, E. Pop, M. El-Sayed, and A. Adibi. "Dynamic Hybrid Metasurfaces," Nano Letters (2021). \href{https://pubs.acs.org/doi/full/10.1021/acs.nanolett.0c03625}{\textcolor{blue}{[pdf]}}
+    
+    \item [4] \textbf{Y. Kiarashi}, S. Abdollahramezani, A. Adibi, M. Zandehshahvar, and A. Adibi. "Deep learning approach based on dimensionality reduction for designing electromagnetic nanostructures," npj Computational Materials (2020). 
+    \href{https://www.nature.com/articles/s41524-020-0276-y}{\textcolor{blue}{[pdf]}}
+    
+    \item [3] S. Abdollahramezani, O. Hemmatyar, H. Taghinejad, A. Krasnok, \textbf{Y. Kiarashi}, M. Zandehshahvar, A. Alu, and A. Adibi. "Tunable Nanophotonics Enabled by Chalcogenide Phase-change Materials," Nanophotonics (2020). \href{https://www.degruyter.com/view/journals/nanoph/9/5/article-p1189.xml}{\textcolor{blue}{[pdf]}}
+
+        
+    \item [2] O. Hemmatyar, S. Abdollahramezani, \textbf{Y. Kiarashi}, M. Zandehshahvar, and A. Adibi. "Full Color Generation with Fano-type Resonant HfO2 Nanopillars Designed by a Deep-learning Approach," Nanoscale (2019). \href{https://arxiv.org/pdf/1907.01595}{\textcolor{blue}{[pdf]}}
+    
+    \item [1] \textbf{Y. Kiarashi}, S. Abdollahramezani, M. Zandehshahvar, O. Hemmatyar, and A. Adibi. "Deep Learning Reveals Underlying Physics of Light-matter Interactions in Nanophotonic Devices," Advanced Theory and Simulations (2019). \href{https://onlinelibrary.wiley.com/doi/pdf/10.1002/adts.201900088%4010.1002/%28ISSN%292513-0390.Machine-Learning?casa_token=bghb_z4M07EAAAAA:oJD8PA6Sy-7PQ3JSTBPTr3w0zwjTwK7JuDt5DtsSq_Fvly446Z68KbHOGE_XfQpTroQCqrXOQ1yIeO0}{\textcolor{blue}{[pdf]}}
+
+
+
+
+
+    
+\end{itemize}
+\end{list1}
+% \newpage
+\begin{list1}
+\item[] \textbf{Conference Proceedings and Presentations}
+\begin{itemize}
+
+\item[28] A. Adibi, M. Zandehshahvar, M. Hadighehjavani, \textbf{Y. Kiarashi}, M. Marzban, & M. R. T. Harandi,   "New machine learning paradigms for knowledge discovery and inverse design of photonic nanostructures." Image Sensing Technologies: Materials, Devices, Systems, and Applications XI. SPIE, 2024.\href{https://doi.org/10.1117/12.3013800}{\textcolor{blue}{[link]}}
+
+\item[28] M. Zandehshahvar, M. van Assen, E. Kim, \textbf{Y. Kiarashi}, V. Keerthipati, A. Stillman, P. Filev, A. Davarpanah, E. Berkowitz, S. Tigges, S. Lee, B. Vey, C. De Cecco, and A. Adibi. "Bayesian Neural Networks for Severity Assessment of COVID-19 Pneumonia from Chest X-ray Using a Multi-reader and Binational Dataset," SPIE Medical Imaging (2023). \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12465/124650G/Bayesian-neural-networks-for-severity-assessment-of-COVID-19-pneumonia/10.1117/12.2653346.short}{\textcolor{blue}{[link]}}
+
+
+\item [27] M. Zandehshahvar, M. van Assen, \textbf{Y. Kiarashi}, T. Arleo, A. Stillman, P. Filev, A. Davarpanah, E. Berkowitz, S. Tigges, S. Lee, B. Vey, C. De Cecco, and A. Adibi. “Severity Assessment of COVID-19 Pneumonia from Chest X-rays using Interpretable Machine Learning and a Multi-reader Dataset," Medical Imaging at NeurIPS (2021). \href{http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2021/59_CameraReady.pdf}{\textcolor{blue}{[link]}}
+
+\item[26]M. Zhu, M. Zandehshahvar, \textbf{Y. Kiarashi}, S. Abdollahramezani, and A. Adibi "Predictions of nonlinear generation from dielectric metasurfaces using a convolutional neural network," Photonic and Phononic Properties of Engineered Nanostructures XIII (2023). \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC12431/PC1243119/Predictions-of-nonlinear-generation-from-dielectric-metasurfaces-using-a-convolutional/10.1117/12.2661614.short}{\textcolor{blue}{[link]}}
+
+\item [25] M. Zandehshahvar, \textbf{Y. Kiarashi}, M. Zhu, D. Bao, M. Javani, R. Pourabolghasem, and A. Adibi. "Metric learning: A New Approach for Defining Similarity Measures for Nanophotonics," SPIE Photonics West (2023). \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC12431/PC124310P/Metric-learning--a-new-approach-for-defining-similarity-measures/10.1117/12.2661572.short}{\textcolor{blue}{[link]}}
+
+\item [24]  M. Reyna, \textbf{Y. Kiarashi}, A. Elola, J. Oliveira, F. Renna, A. Gu, E. Alday, N. Sadr, A. Sharma, J. Kpodonu, S. Mattos, M. Coimbra, R. Sameni, A. Rad, and G. Clifford. "Heart murmur detection from phonocardiogram recordings: The George B. Moody PhysioNet Challenge 2022," Computing in Cardiology (2022). \href{https://ieeexplore.ieee.org/abstract/document/10081821}{\textcolor{blue}{[link]}}
+
+\item[23] M. Zandehshahvar, M. Javani, \textbf{Y. Kiarashi}, M. Zhu, T. Brown, D. Bao, M. Marzban, R. Pourabolghasem, and A. Adibi "New paradigms in manifold learning for knowledge discovery and inverse design of photonic nanostructures,"Quantum Sensing and Nano Electronics and Photonics XIX (2022). \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12430/1243009/New-paradigms-in-manifold-learning-for-knowledge-discovery-and-inverse/10.1117/12.2662754.short}{\textcolor{blue}{[link]}}
+
+\item[22] M. Javani, M. Zandehshahvar, M. Zhu, T. Brown, \textbf{Y. Kiarashi}, and A.Adibi "Inverse Design of Nanophotonics Structures with Minimal Computation Using a Pruning Approach," CLEO (2022). \href{https://opg.optica.org/abstract.cfm?uri=cleo_qels-2022-JW3B.132}{\textcolor{blue}{[link]}}
+
+\item[21] M. Zandehshahvar, \textbf{Y. Kiarashi}, M. Javani, M. Zhu, T. Brown, D. Bao, and A. Adibi. "Efficient artificial intelligence techniques for inverse design and knowledge discovery in metamaterials," The Journal of the Acoustical Society of America (2022). \href{https://pubs.aip.org/asa/jasa/article/151/4_Supplement/A254/2838818/Efficient-artificial-intelligence-techniques-for}{\textcolor{blue}{[link]}}
+
+\item[20] M. Zandehshahvar, \textbf{Y. Kiarashi}, M. Zhu, T. Brown, M. Javani, and A. Adibi. "Manifold learning: A Promising Tool for Knowledge Discovery and Inverse Design in Nanophotonics," SPIE Photonics West (2022). \href{https://opg.optica.org/abstract.cfm?uri=CLEO_SI-2021-JTu3A.115}{\textcolor{blue}{[link]}}
+
+\item [19] M. Zandehshahvar, M. Javani, M. Chen, T. Brown, \textbf{Y. Kiarashi}, and A. Adibi “Machine learning for efficient inverse design of nanophotonics structures," Photonic and Phononic Properties of Engineered Nanostructures XII (2022). \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC12010/PC120100W/Machine-learning-for-efficient-inverse-design-of-nanophotonics-structures/10.1117/12.2617485.short}{\textcolor{blue}{[link]}}
+
+\item [18] \textbf{Y. Kiarashi}, M. Zandehshahvar, M. Zhu, H. Maleki, S. Abdollahramezani, T. Brown, R.  Barton, and A. Adibi "Latent learning for design and knowledge discovery in nanophotonics," Metamaterials, Metadevices, and Metasystems (2021). \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11795/1179505/Latent-learning-for-design-and-knowledge-discovery-in-nanophotonics/10.1117/12.2595199.short}{\textcolor{blue}{[link]}}
+
+\item [17] M. Zandehshahvar, \textbf{Y. Kiarashi}, M. Zhu, H. Maleki, T. Brown, and A. Adibi. "Manifold Learning for Reducing the Design Complexity of Photonic Nanostructures," CLEO (2021). \href{https://opg.optica.org/abstract.cfm?uri=CLEO_SI-2021-JTu3A.115}{\textcolor{blue}{[link]}}
+
+\item [16] \textbf{Y. Kiarashi}, M. Zandehshahvar, and A. Adibi. "Manifold learning for knowledge discovery and design in nanophotonics," Photonic and Photonic and Phononic Properties of Engineered Nanostructures XI (2021). \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2GjI4oMAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=2GjI4oMAAAAJ:0EnyYjriUFMC}{\textcolor{blue}{[link]}}
+
+\item [15] H. Maleki, M. Zandehshahvar, \textbf{Y. Kiarashi}, M. Zhu, and A. Adibi. "Revealing the hidden capacity of artificial intelligence in nanoscience: physics-driven metric learning," Photonic and Phononic Properties of Engineered Nanostructures XI (2021). \href{https://ml4eng.github.io/camera_readys/18.pdf}{\textcolor{blue}{[link]}}
+
+\item [14] M. Zandehshahvar, \textbf{Y. Kiarashi}, M. Zhu, H. Maleki, O. Hemmatyar, S. Abdollahramezani, R. Pourabolghasem, and A. Adibi. "Accelerating Inverse Design of Nanostructures Using Manifold Learning," ML4Eng at NeurIPS (2020). \href{https://ml4eng.github.io/camera_readys/18.pdf}{\textcolor{blue}{[link]}}
+
+\item [13] M. Chen, M. Zandehshahvar, \textbf{Y. Kiarashi}, O. Hemmatyar, D. Umapathy, S. Abdollahramezani,  and A. Adibi. "Inverse design of nanophotonic structures using a hybrid dimensionality reduction technique," Frontiers in Optics (2020). \href{https://opg.optica.org/abstract.cfm?uri=FiO-2020-FM2A.1}{\textcolor{blue}{[link]}}
+
+\item [12] M. Chen, M. Zandehshahvar, \textbf{Y. Kiarashi}, O. Hemmatyar, D. Umapathy, S. Abdollahramezani, and A. Adibi. "Inverse design of nanophotonic structures using a hybrid dimensionality reduction technique," Frontiers in Optics (2020). \href{https://opg.optica.org/abstract.cfm?uri=FiO-2020-FM2A.1}{\textcolor{blue}{[link]}}
+
+\item [11] O. Hemmatyar, S. Abdollahramezani, \textbf{Y. Kiarashi}, M. Zandehshahvar, and A. Adibi. "Fano Resonant All-dielectric HfO2 Metasurfaces for Full Color Generation Designed by Deep Learning," CLEO (2020). \href{https://opg.optica.org/abstract.cfm?uri=CLEO_QELS-2020-JW2D.34}{\textcolor{blue}{[link]}}
+
+\item [10] M. Zandehshahvar, \textbf{Y. Kiarashi}, O. Hemmatyar, S. Abdollahramezani, R. Pourabolghasem, and A. Adibi. "Cracking the Design Complexity of Nanostructures using Geometric Deep Learning," CLEO (2020). \href{https://opg.optica.org/abstract.cfm?uri=CLEO_SI-2020-SF1R.4}{\textcolor{blue}{[link]}}
+
+\item [9] \textbf{Y. Kiarashi}, M. Zandehshahvar, S. Abdollahramezani, O. Hemmatyar, R. Pourabolghasem, and A. Adibi. "Geometric Deep Learning Unlocks the Underlying Physics of Nanostructures," CLEO (2020). \href{https://ieeexplore.ieee.org/document/9193417}{\textcolor{blue}{[link]}}
+
+\item [8] S.  Abdollahramezani, \textbf{Y. Kiarashi}, O. Hemmatyar, M. Zandehshavar, and A. Adibi, "Electrically programmable phased-array antenna using phase-change materials," CLEO: QELS Fundamental Science (2020). \href{https://opg.optica.org/abstract.cfm?uri=CLEO_QELS-2020-FW3Q.5}{\textcolor{blue}{[link]}}
+
+\item [7] M. Zandehshahvar, \textbf{Y. Kiarashi}, S. Abdollahramezani, O. Hemmatyar, H. Maleki, and A. Adibi, "Sample-efficient machine-learning method for designing photonic nanostructures," Photonic and Phononic Properties of Engineered Nanostructures X
+(2020). \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11289/112890F/Deep-learning-based-design-of-Fano-resonant-HfO2-metasurfaces-for/10.1117/12.2554907.short}{\textcolor{blue}{[link]}}
+
+\item [6] O. Hemmatyar, S. Abdollahramezani, \textbf{Y. Kiarashi}, M. Zandehshahvar, and A. Adibi, "Deep-learning-based design of Fano resonant HfO2 metasurfaces for full color generation," Photonic and Phononic Properties of Engineered Nanostructures X
+(2020). \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11289/112890F/Deep-learning-based-design-of-Fano-resonant-HfO2-metasurfaces-for/10.1117/12.2554907.short}{\textcolor{blue}{[link]}}
+
+\item [5] M. Zandehshahvar, O. Hemmatyar, \textbf{Y.  Kiarashi}, S. Abdollahramezani, and A. Adibi, "Dimensionality reduction based method for design and optimization of optical nanostructures using neural network," Frontiers in Optics
+(2019). \href{https://opg.optica.org/abstract.cfm?uri=FiO-2019-FM5C.2}{\textcolor{blue}{[link]}}
+
+\item [4] \textbf{Y. Kiarashi}, S. Abdollahramezani, M. Zandehshahvar, O. Hemmatyar, and A. Adibi, "Nanophotonics design platform based on double-step dimensionality reduction," Optica Publishing Group
+(2019). \href{https://opg.optica.org/abstract.cfm?uri=LS-2019-JTu3A.4}{\textcolor{blue}{[link]}}
+
+\item [3] \textbf{Y.  Kiarashi}, S. Abdollahramezani, T. Fan, and A. Adibi, "Mitigating inverse design complexity of nano-antennas using a novel dimensionality reduction approach," Photonic and phononic properties of engineered nanostructures IX
+(2019). \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10927/109270C/Mitigating-inverse-design-complexity-of-nano-antennas-using-a-novel/10.1117/12.2517651.short}{\textcolor{blue}{[link]}}
+
+\item [2] S. Abdollahramezani, H. Taghinejad, \textbf{Y. Kiarashi}, A. Eftekhar, and Ali Adibi, "Dynamic dielectric metasurfaces incorporating phase-change material," CLEO: Science and Innovations (2018). \href{https://opg.optica.org/abstract.cfm?uri=cleo_si-2018-SF1J.1}{\textcolor{blue}{[link]}}
+
+\item [1] \textbf{Y. Kiarashi}, M. Masnadi-Shirazi, M. Yazdi, and M. Zandshahvar, "Quality enhancement of low-resolution face images," Machine Vision and Image Processing (2015). \href{https://ieeexplore.ieee.org/abstract/document/7397542}{\textcolor{blue}{[link]}}
+
+\end{itemize}
+\end{list1}
+
+
+
+\begin{list1}
+\item[] \textbf{Invited Talks}
+% \item[10] \textbf{M. Zandehshahvar}, M. Javani, and A. Adibi. \textit{“Novel Machine Learning Techniques for Knowledge Discovery and Inverse Design in Nanophotonics,"} invited talk in Optica Integrated Photonic Research (IPR), Optical Advanced Photonic Congress (2023).
+\begin{itemize}
+
+
+% \item[7] \textbf{M. Zandehshahvar}, M. Javani, Y. Kiarashi, M. Zhu, T. Brown, D. Bao, M. Marzban, R. Pourabolghasem, and A. Adibi. "\textit{New Paradigms in Manifold Learning for Knowledge Discovery and Inverse Design of Photonic Nanostructures,"} invited talk in SPIE Photonics West (2023).
+
+% \item[6]\textbf{M. Zandehshahvar}, Y. Kiarashi, M. Javani, M. Zhu, T. Brown, D. Bao, and A. Adibi. "\textit{Efficient Artificial Intelligence Techniques for Inverse Design and Knowledge Discovery in Metamaterials,"} invited talk at Acoustical Society of America (2022).
+\item []\textbf{Y. Kiarashi}. "Can Sleep Architecture and Behavior Patterns Predict Next-Day Challenging Behavior in Autism?," Georgia CTSA, Atlanta (2025).
+\item []\textbf{Y. Kiarashi}. "Advancing Neurological Care Through Novel Sensing Pipelines for Detection and Intervention," NeuroNext Research Symposium, Atlanta (2024).
+\item []\textbf{Y. Kiarashi}, M. Zandehshahvar, and A. Adibi. "Manifold learning for knowledge discovery and inverse design in nanophotonics ," invited for SPIE Photonics West Meeting, San Francisco (2021).
+
+% \item [] \textbf{M. Zandehshahvar}, Y. Kiarashi, M. Zhu, H. Maleki, T. Brown, and A. Adibi. "\textit{Manifold Learning for Knowledge Discovery in Optical Metamaterials,"} invited for OSA Advanced Photonics Congress, Montreal, CA (2021). 
+
+\item [] \textbf{Y. Kiarashi}, S. Abdollahramezani, M. Zandehshahvar, O. Hemmatyar, H. Maleki, M. Zhou, and A. Adibi. "Using Artificial Intelligence Techniques for Design and Knowledge Discovery in Electromagnetic Nanostructures," invited talk in 6th world congress on EECSS (2020).
+\item [] \textbf{Y. Kiarashi}, S. Abdollahramezani, M. Zandehshahvar, O. Hemmatyar, and A. Adibi. "Analysis and knowledge discovery of metastructures using deep learning and machine learning approaches in reduced-dimensionality spaces," invited talk in META (2020).
+\item [] \textbf{Y. Kiarashi}, S. Abdollahramezani , M. Zandehshahvar, O. Hemmatyar, and A. Adibi, "Novel Deep Learning-based Technique for Design and Optimization of Photonic Metastructures,” invited talk in META (2019).
+\end{itemize}
+\end{list1}
+
+
+
+\begin{list1}
+\item[] \textbf{Patents}
+\begin{itemize}
+
+\item[] \hspace{-0.5cm} \textbf{Y. Kiarashi}, and A. Adibi, "Optical Co-processor Architecture Using Array of Weak Optical Perceptron," filed in United States Patent and Trademark Office (USPTO), U.S.
+Patent Application No. 63/010,279, April 2020. \href{https://patents.google.com/patent/US20230237015A1/en}{{\textcolor{blue}{[link]}}}
+
+
+\item[] \hspace{-0.5cm} \textbf{Y. Kiarashi}, M. Zandehshahvar, S. Abdollahramezani, O. Hemmatyar, and A. Adibi Geometric Deep Learning-based Method for Extracting the Underlying Physics of Nanophotonic Structures," filed in United States Patent and Trademark Office (USPTO), U.S. 
+Patent Application No. 62/895,466, September 2019. \href{https://patents.google.com/patent/US20220391708A1/en}{{\textcolor{blue}{[link]}}} 
+
+\item[] \hspace{-0.5cm} \textbf{Y. Kiarashi}, S. Abdollahramezani, and A. Adibi "Double-Step Dimensionality Reduction Technique for Analysis, Design, Understanding, and Optimization of Engineering Problems," filed in United States Patent and Trademark Office (USPTO), U.S.
+Patent Application No. 62/770,119, November 2018. \href{https://patents.google.com/patent/US20220019716A1/en}{{\textcolor{blue}{[link]}}}
+\end{itemize}
+\end{list1}
+
+%%% Mentorship
+
+% \section{\sc  \textbf{\large{Academic Services}}}
+\begin{list1}
+
+% 	\item[] 
+	
+% 	\hspace*{\fill}
+% 	Fall 2016 - Spring 2020
+	
+% 	\item[]Advisor: Prof. Adibi
+%     \begin{itemize}
+% 	 \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+% 	 \item Ph.D. in Biomedical Informatics, School of Medicine
+% 	 \end{itemize}
+% \vspace{0.15cm}
+\begin{itemize}
+% \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+%     \begin{itemize}
+%     \item Member of organizing committee for \href{https://moody-challenge.physionet.org}{{\textcolor{blue}{George B. Moody PhysioNet}}}\hspace*{\fill}December 2021 - Present\\ Challenges. 
+%     \item Editor of \href{https://www.spiedigitallibrary.org/journals/journal-of-nanophotonics/call-for-papers}{{\textcolor{blue}{Journal of Nanophotonics}}}\hspace*{\fill}September 2021-Present\\ AI-based Design and Knowledge Discovery in Nanophotonics Special Edition.
+%     \item  Treasury officer of the OSA (Optical Society of America)\\ Georgia Tech student chapter.\hspace*{\fill} June 2018 - Fall 2021
+% 	\item Reviewer of 40+ articles of scientific peer-reviewed Journals.\hspace*{\fill}Spring 2017 - present
+% % 		 \item Graduate Teaching Assistant for ``Electromagnetics'' \hspace*{\fill} Spring 2019
+% %         \item  Graduate Teaching Assistant for ``Circuit Analysis.''\hspace*{\fill} Fall 2016
+%     % \item Mentored and tutored more than ten graduate students \hspace*{\fill} Fall 2016 - Summer 2021\\on several courses research projects in the areas of deep learning\\ and manifold learning.
+
+
+% \end{itemize}
+
+
+% 		Research Projects:
+% 		\begin{itemize}
+% 		    \item Understanding the Underlying Physics of Light-matter Interactions Using Geometric Deep Learning.
+% 		    \item Inverse Design of the Nanophotonics Structures.
+% 		    \item Mathematical Modeling of Nanostructures for Optical Neural Network.
+% 		    \item Modeling the Dynamics of Optical Reservoir Computing Systems.
+% 		\end{itemize}
+% 			\item[] \textbf{Shiraz University, Shiraz, Iran}
+
+% % 	\item[]Advisor: Prof. Yazdi
+% 	\begin{itemize}
+% 		  \item  Teaching Assistant for ``Pattern Recognition'' \hspace*{\fill} Fall 2014
+% \item  Teaching Assistant for ``Image Processing'' \hspace*{\fill} Spring 2014
+% \item Tutored highschool students for ''Mathematics Olympiad''\hspace*{\fill} Fall 2007 - Spring 2016
+% 		\end{itemize}
+		
+\end{itemize}
+\end{list1}
+\section{\sc  \textbf{\large{Teaching and Mentorship}}}
+
+\begin{list1}
+    
+
+	
+	
+% 	\item[]Advisor: Prof. Adibi
+%     \begin{itemize}
+% 	 \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+% 	 \item Ph.D. in Biomedical Informatics, School of Medicine
+% 	 \end{itemize}
+% \vspace{0.15cm}
+    
+    
+    \item[] \textbf{Mentorship} 
+        \begin{itemize}
+    \item  Mentoring graduate and under graduate student in biomedical sensing at Emory. \hspace*{\fill} 2021 - 2025
+    \item Mentoring more 50+ graduate and undergraduate students on research projects \hspace*{\fill} 2019 - 2021 \\focused on applications of machine learning in medical image processing, inverse \\design and optimization as part of \href{https://www.vip.gatech.edu/teams/vwi} {\textcolor{blue}{AI-based Discovery and Innovation V.I.P. Group}} 
+% \begin{itemize}
+
+
+
+% \end{itemize}
+
+
+
+		% \item Graduate Teaching Assistant for Signal Processing and Electromagnetics \hspace*{\fill} Fall 2016
+	% \item Mentor of the summer undergraduate research in \hspace*{\fill}Summer 2019\\ engineering/sciences \href{https://sure.gatech.edu/about-sure}{{\textcolor{blue}{Center for Engineering Education and Diversity (CEED)}}} program.
+
+
+        	% \item Mentor of the summer undergraduate research in engineering/sciences \hspace*{\fill}Summer 2019\\ \href{https://sure.gatech.edu/about-sure}{{\textcolor{blue}{Center for Engineering Education and Diversity (CEED)}}} program.\\The program is committed to increasing the number of qualified students \\who are traditionally under-represented in STEM fields. 
+
+        %  		 \item Graduate Teaching Assistant for ``Electromagnetics'' \hspace*{\fill} Spring 2019
+        % \item  Graduate Teaching Assistant for ``Circuit Analysis.''\hspace*{\fill} Fall 2016
+	
+	% \textit{The program is committed to increasing the number of qualified students who are traditionally under-represented in STEM fields. Each summer, approximately 40-50 (out of more than 250 applicants) students of at least junior-level undergraduate standing are recruited on a nationwide basis and paired with both a faculty and a PhD student. This program established as part of the National Science Foundation (NSF) Research Experiences for Undergraduates (REU) Summer Undergraduate Research in Engineering (SURE) grant.\\
+ %    \item Mentored and tutored more than ten graduate students \hspace*{\fill} Fall 2016 - Summer 2021\\on several courses research projects in the areas of Artificial Intelligence\\ and Machine Learning.
+
+
+\end{itemize}
+
+% \item[] \textbf{Teaching Assistant - Georgia Institute of Technology} \hspace*{\fill} 2016 - 2017
+
+% \item[] Electromagnetic, Circuit Theory, and Electronics.
+% \begin{itemize}
+%     % \item Instructing the basic circuit analysis concepts and their implementation for non-ECE students.
+% \end{itemize}
+
+\item[] \textbf{Teaching} 
+    \item[] Sleep and High‑Risk Behaviors in Profound Autism. \hspace*{\fill} Spring 2025
+    \item[] Electromagnetic, Circuit Theory, and Electronics.\hspace*{\fill} 2016 - 2019
+    \item[] Basic Circuit Theory, Logic Circuits Lab, Image Processing and Patter Recognition.\hspace*{\fill} 2010 - 2014
+
+
+\end{list1}
+
+\section{\sc \textbf{\large{Grants and Awards}}}
+
+\begin{itemize}
+\item \textbf{Pending} - NIH K99/R00 Pathway to Independence Award (PI). \hspace*{\fill} 2025 
+\item \textbf{Pending} - Samsung Research (CoPI) AI-Driven Modeling of Daytime Activity,   \hspace*{\fill} 2025 \\ Sleep, and Cardiac Health Using Wearable Technology in Mild Cognitive Impairment. 
+\item \textbf{Pending} -  Alzheimer's Association Grant (CoPI) AI-Driven Sleep Study on Links Between  \hspace*{\fill} 2025 \\ Sleep and Neurodegeneration. 
+\item \textbf{Pending} - R21 (MPI) Understanding Sleep and Behavior Dynamics in Children with \hspace*{\fill} 2024 \\ Autism Spectrum Disorder. 
+\item \textbf{Pending} - BrightFocus Early Career Award (PI) Alzheimer's Disease Research. \hspace*{\fill} 2024 
+\item \textbf{Pending} - Simons Foundation Autism Research Initiative (CoPI). \hspace*{\fill} 2024 
+\item \textbf{Awarded} - Thrasher Early Career Award \$26,750 (PI). \hspace*{\fill} 2024 
+% \item \textbf{Awarded} - Contributed to idea generation, background writing, significance, aims,\\ and research strategy for successful grants worth over \$800,000, focusing on \\explainable AI for knowledge discovery in nanophotonics (Key Personnel). \hspace*{\fill} 2019-2021
+% \item Attended grant writing workshops at Georgia Tech and Emory. \hspace*{\fill} 2021 
+\end{itemize}
+% \begin{rSection}{Grant Contributions}
+% \begin{rSubsection}{DARPA (\$800,000)}{ 2019-2022}{}{} 
+% \item[]SCH: Intelligent Radiology Through Human-Machine Cooperation \\PIs: Ali Adibi, Carlo De Cecco, Elizabeth Krupinski \\ Contributed in idea generation, writing background, significance, aims, and research strategy.
+
+% \end{rSubsection}
+
+% \begin{rSubsection}{Emory/Georgia Tech I3 (\$100,000)}{2022-2024}{}{} 
+% \item[]An Artificial Intelligence-based Platform for Severity Analysis, Prognosis, and Early Prediction of Short and Long Term Outcomes in COVID-19 Patients \\PIs: Carlo De Cecco, Ali Adibi \\ Contributed in idea generation, writing background, significance, aims, and research strategy.
+
+% \end{rSubsection}
+% \end{rSection}
+
+\section{\sc \textbf{\large{Academic Services}}}
+\begin{itemize}
+\item Program committee member for Computing in Cardiology conference (CinC). \hspace*{\fill}2022 - 2024
+\item Guest Editor of Journal of Nanophotonics. \hspace*{\fill}2021 - 2023
+ \item Treasury officer of the Optical Society of America  at Georgia Tech. \hspace*{\fill} 2018 - 2021
+\item Reviewer of 50+ articles of scientific peer-reviewed Journals.\hspace*{\fill} 2017 - Present
+\item Member of Optical Society of America (OSA).\hspace*{\fill} 2017 - Present
+\item Member of the Society of Photo-Optical Instrumentation Engineers (SPIE).\hspace*{\fill} 2017 - Present
+\end{itemize}
+
+
+
+
+% \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+%     \begin{itemize}
+%     \item Mentoring graduate and undergraduate students in  \\  \href{https://empowerment.emory.edu}{{\textcolor{blue}{Charlie and Harriet Shaffer Cognitive Empowerment Program}}}\hspace*{\fill} Fall 2021 - Present
+%     \item Mentoring 70+ grad and undergrad students in \\  \href{https://www.vip.gatech.edu/teams/ai-based-discovery-and-innovation}{{\textcolor{blue}{AI-based Discovery and Innovation}}}\hspace*{\fill} Fall 2019 - Summer 2021
+% 		\item Graduate Teaching Assistant for Signal Processing and Electromagnetics \hspace*{\fill} Fall 2016
+% 	\item Mentor of the summer undergraduate research in \hspace*{\fill}Summer 2019\\ engineering/sciences \href{https://sure.gatech.edu/about-sure}{{\textcolor{blue}{Center for Engineering Education and Diversity (CEED)}}} program.
+% % 		 \item Graduate Teaching Assistant for ``Electromagnetics'' \hspace*{\fill} Spring 2019
+% %         \item  Graduate Teaching Assistant for ``Circuit Analysis.''\hspace*{\fill} Fall 2016
+%     % \item Mentored and tutored more than ten graduate students \hspace*{\fill} Fall 2016 - Summer 2021\\on several courses research projects in the areas of deep learning\\ and manifold learning.
+
+
+% \end{itemize}
+
+
+% 		Research Projects:
+% 		\begin{itemize}
+% 		    \item Understanding the Underlying Physics of Light-matter Interactions Using Geometric Deep Learning.
+% 		    \item Inverse Design of the Nanophotonics Structures.
+% 		    \item Mathematical Modeling of Nanostructures for Optical Neural Network.
+% 		    \item Modeling the Dynamics of Optical Reservoir Computing Systems.
+% 		\end{itemize}
+% 			\item[] \textbf{Shiraz University, Shiraz, Iran}
+
+% % 	\item[]Advisor: Prof. Yazdi
+% 	\begin{itemize}
+% 		  \item  Teaching Assistant for ``Pattern Recognition'' \hspace*{\fill} Fall 2014
+% \item  Teaching Assistant for ``Image Processing'' \hspace*{\fill} Spring 2014
+% \item Tutored highschool students for ''Mathematics Olympiad''\hspace*{\fill} Fall 2007 - Spring 2016
+% 		\end{itemize}
+		
+
+\begin{itemize}
+\renewcommand\labelitemi{\scriptsize$\blacksquare$}
+% \item  Research Group Leader of ``AI-based Discovery and Innovation'' \\(more than 30 researchers).\\ 
+% Team advisor: Prof. Adibi Georgia Institute of Technology.\hspace*{\fill}\textbf{Summer 2019 - now}\\
+% The Vertically Integrated Projects (VIP) Program is a transformative approach to enhancing higher education by engaging undergraduate and graduate students in ambitious, long-term, large-scale, multidisciplinary project teams.\\
+% \item  Lead Graduate Teaching Assistant for ``Microelectronic Circuits''. \hspace*{\fill} Summer 2019
+% \\ Prof. Sarioglu, and Prof. Adibi Georgia Institute of Technology
+% \item  Lead Graduate Teaching Assistant for ``Electromagnetics''. \hspace*{\fill} Spring 2019
+% \\ Prof. Adibi, Georgia Institute of Technology
+% \item  Lead Graduate Teaching Assistant for ``Circuit Analysis''. \hspace*{\fill} Fall 2016
+% \\ Prof. Habetler, Georgia Institute of Technology   
+% \item Mentored and tutored more than ten graduate students on several courses \hspace*{\fill} Fall 2016 - present\\research projects in the areas of deep learning and manifold learning.
+% \\ Prof. Adibi, Georgia Institute of Technology   
+% \item  Teaching Assistant for ``Pattern Recognition''. \hspace*{\fill} Fall 2014
+% \\ Prof. Yazdi, Shiraz University
+% \item  Teaching Assistant for ``Image Processing''. \hspace*{\fill} Spring 2014
+% \\ Prof. Yazdi, Shiraz University
+% \item Mentored and tutored highschool student for ''Mathematics Olympiad''\hspace*{\fill} Fall 2007 - Spring 2016\\  preparation with focus on combinatorics and fundamentals of \\olympiad of informatics.
+\end{itemize}
+%%%
+% \section{\sc  \textbf{\large{Teaching Experiences}}}
+% \begin{itemize}
+% % \item  Research Group Leader of ``AI-based Discovery and Innovation'' \\(more than 30 researchers).\\ 
+% % Team advisor: Prof. Adibi Georgia Institute of Technology.\hspace*{\fill}\textbf{Summer 2019 - now}\\
+% % The Vertically Integrated Projects (VIP) Program is a transformative approach to enhancing higher education by engaging undergraduate and graduate students in ambitious, long-term, large-scale, multidisciplinary project teams.\\
+% % \item Mentored More Than student for Mathematics Olympiad\\  preparation with focus on combinatorics and fundamentals of \\olympiad of informatics. \hspace*{\fill}\textbf{ Fall 2007 - Spring 2016}
+% \item  Lead Graduate Teaching Assistant for ``Microelectronic Circuits''. \hspace*{\fill} \textbf{Summer 2019} 
+% \\ Prof. Sarioglu, and Prof. Adibi Georgia Institute of Technology\\
+% \item  Lead Graduate Teaching Assistant for ``Electromagnetics''. \hspace*{\fill} \textbf{Spring 2019} 
+% \\ Prof. Adibi, Georgia Institute of Technology\\
+% \item  Lead Graduate Teaching Assistant for ``Circuit Analysis''. \hspace*{\fill} \textbf{Fall 2016} 
+% \\ Prof. Habetler, Georgia Institute of Technology \\  
+% \item Mentored and tutored more than ten graduate students on several courses \\research projects in the areas of deep learning and manifold learning.\hspace*{\fill} \textbf{Fall 2016 - now}\\
+% \\ Prof. Adibi, Georgia Institute of Technology   
+% \item  Teaching Assistant for ``Pattern Recognition''. \hspace*{\fill} \textbf{Fall 2014}
+% \\ Prof. Yazdi, Shiraz University\\
+% \item  Teaching Assistant for ``Image Processing''. \hspace*{\fill} \textbf{Spring 2014} 
+% \\ Prof. Yazdi, Shiraz University\\
+% \item Mentored and tutored highschool student for Mathematics Olympiad\\  preparation with focus on combinatorics and fundamentals of \\olympiad of informatics. \hspace*{\fill}\textbf{ Fall 2007 - Spring 2016}
+
+
+% \end{itemize}
+
+
+
+%%%
+%%%%
+% \section{\sc \textbf{\large{Academic Services}}}
+% \begin{itemize}
+% 	\item  Secretary officer of the OSA (Optical Society of America) Georgia Tech student chapter from 2018.
+% 	\item  Reviewer in scientific peer-reviewed Journals.
+% 	\item Mentor of the summer undergraduate research in engineering/sciences (S.U.R.E.) program. 
+	
+% % 	\\\\\textit{The program is committed to increasing the number of qualified students who are traditionally under-represented in STEM fields. Each summer, approximately 40-50 (out of more than 250 applicants) students of at least junior-level undergraduate standing are recruited on a nationwide basis and paired with both a faculty and a PhD student. This program established as part of the National Science Foundation (NSF) Research Experiences for Undergraduates (REU) Summer Undergraduate Research in Engineering (SURE) grant.\\
+	
+	
+% 	\item Member of the Optical Society (OSA).
+% 	\item Member of the Society of Photo-Optical Instrumentation Engineers (SPIE).
+
+% \end{itemize}
+%%%%
+% \section{\sc \textbf{\large{Technical Skills}}}
+% \begin{itemize}
+% \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+% 	\item  Programming and Tools: Python(PyTorch, TensorFlow), Matlab, and familiar with R
+% 	\item EM Simulation: COMSOL Multi-physics, CST, and Lumerical
+% 	\item  Operating Systems: Linux, Mac OS X, Windows
+% 	\item Writing: LaTeX, MS Word.
+% 	\item Language: English and Persian
+
+
+% \end{itemize}
+
+% \section{\sc \textbf{\large{Academic Services}}}
+% \begin{itemize}
+% \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+% 	\item  Treasury officer of the Optical Society of America (OSA)\hspace*{\fill}Summer 2018 - present\\ Georgia Tech student chapter.
+% 	\item Reviewer in scientific peer-reviewed Journals.\hspace*{\fill}Spring 2017 - present
+% 	\item Mentor of the summer undergraduate research in \hspace*{\fill}Summer 2019\\ engineering/sciences (S.U.R.E.) program.
+	
+% 	\\\\\textit{The program is committed to increasing the number of qualified students who are traditionally under-represented in STEM fields. Each summer, approximately 40-50 (out of more than 250 applicants) students of at least junior-level undergraduate standing are recruited on a nationwide basis and paired with both a faculty and a PhD student. This program established as part of the National Science Foundation (NSF) Research Experiences for Undergraduates (REU) Summer Undergraduate Research in Engineering (SURE) grant.\\
+	
+	
+% 	\item Member of the Optical Society (OSA).\hspace*{\fill}Spring 2018 - present
+% 	\item Member of the Society of Photo-Optical Instrumentation Engineers (SPIE).\hspace*{\fill}Fall 2018 - present
+
+% \end{itemize}
+
+
+% \section{\sc \textbf{\large{Honors \&\\ Awards}}}
+% \begin{itemize}
+% \renewcommand\labelitemi{\scriptsize$\blacksquare$}
+% 	\item Recipient of OSA Student Leadership Conference (SLC) travel grant. \hspace*{\fill}Summer 2018
+% 	\item  Admitted with graduate fellowship to Electrical Engineering department\hspace*{\fill}Spring 2016\\ of Georgia Institute of Technology.  
+% \end{itemize}
+\vspace{-3mm}
+\section{\sc\textbf{\large{References}}}
+\begin{list1}
+\item[] \href{http://gdclifford.info/gari}{{\textcolor{blue}{Gari Clifford}}} (E-mail: \href{mailto:gari.clifford@bme.gatech.edu}{gari.clifford@bme.gatech.edu})\\
+Chair \& Professor, Department of Biomedical Informatics, Emory School of Medicine.
+
+\item[] \href{https://med.emory.edu/directory/profile/?u=ALEVEY}{{\textcolor{blue}{Allan Levey}}} (E-mail: \href{mailto:alevey@emory.edu}{alevey@emory.edu})\\
+Professor, Department of Neurology, Emory University School of Medicine.
+
+\item[] \href{https://sites.gatech.edu/ece-prg/people/adibi/}{{\textcolor{blue}{Ali Adibi}}} (E-mail: \href{mailto:ali.adibi@ece.gatech.edu}{ali.adibi@ece.gatech.edu})\\
+Professor, AAAS Fellow, Electrical Engineering, Georgia Institute of Technology.
+
+
+\item[] \href{https://thecenterfordiscovery.org/}{{\textcolor{blue}{Johanna Lantz}}} (E-mail: \href{mailto:thamlin@tcfd.org}{jlantz@tcfd.org}) \\Chief of Psychology, The Center for Discovery.
+
+\item[] \href{https://www.linkedin.com/in/jonathan-berent-865a/}{{\textcolor{blue}{Jonathan Berent}}} (E-mail: \href{mailto:jb@nextsense.io}{jb@nextsense.io}) \\CEO \& Founder, NextSense, Inc.
+
+
+\item[] \href{https://thecenterfordiscovery.org/about-us/leadership/dr-teresa-hamlin/}{{\textcolor{blue}{Thresea Hamlin}}} (E-mail: \href{mailto:thamlin@tcfd.org}{thamlin@tcfd.org}) \\President, The Center for Discovery.
+
+
+
+
+
+% \item[] \href{https://sites.gatech.edu/ece-prg/people/adibi/}{{\textcolor{blue}{Allan Levey}}} (E-mail: \href{mailto:ali.adibi@ece.gatech.edu}{ali.adibi@ece.gatech.edu})\\
+% Professor, AAAS Fellow, Electrical Engineering, Georgia Institute of Technology.
+
+% \item[] \href{https://med.emory.edu/directory/profile/?u=CDECECC}{{\textcolor{blue}{Carlo De Cecco}}} (E-mail: \href{mailto:carlo.dececco@emory.edu}{carlo.dececco@emory.edu})\\
+% Professor, Department of Radiology and Imaging Sciences, Emory University School of Medicine.
+
+
+% \item[] \href{https://cssb.biology.gatech.edu/people/HowardWeiss.html}{{\textcolor{blue}{Howie Weiss}}} (E-mail: \href{mailto:hnw1@psu.edu}{hnw1@psu.edu})\\
+% Professor of Biology and Mathematics, Huck Institutes of the Life Sciences, PennState.
+
+\item[] \href{https://med.ucf.edu/person/edward-ross-m-d/}{{\textcolor{blue}{Edward A. Ross}}} (E-mail: \href{mailto:thamlin@tcfd.org}{Edward.Ross@ucf.edu}) \\Chair \& Professor, Department of Internal Medicine, University of Central Flordia.
+
+% \item[] \href{https://asticorp.com}{{\textcolor{blue}{Sam Nicolino}}} (E-mail: \href{mailto:sam@asoundtech.com}{sam@asoundtech.com})\\
+% President \& CEO, Adaptive Sound Technologies, Inc.
+
+
+
+
+% \item[] \href{https://asticorp.com}{{\textcolor{blue}{Sam Nicolino}}} (E-mail: \href{mailto:sam@asoundtech.com}{sam@asoundtech.com}) \\President \& CEO, Adaptive Sound Technologies, Inc.
+
+\item[] \href{https://med.emory.edu/directory/profile/?u=CDECECC}{{\textcolor{blue}{Carlo De Cecco}}} (E-mail: \href{mailto:carlo.dececco@emory.edu
+}{carlo.dececco@emory.edu})\\
+Professor, Department of Radiology and Imaging Sciences, Emory University School of Medicine.
+
+% \item[] \href{https://www.simonsfoundation.org/people/leslie-greengard/}{{\textcolor{blue}{Leslie Greengard}}} (E-mail: \href{mailto:	lgreengard@flatironinstitute.org}{lgreengard@flatironinstitute.org}) \\Professor, Department of Mathematics and Computer Science, New York University and Director of CCM, Flatiron Institute.
+
+\end{list1}
+\end{resume}
+\end{document}
