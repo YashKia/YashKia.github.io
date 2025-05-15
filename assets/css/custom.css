@@ -1,5 +1,13 @@
 /* Custom CSS for a more professional and minimalist website */
 
+/* Define purple spectrum variables */
+:root {
+  --light-purple: #BDB5D5;   /* Light purple for backgrounds and decorative elements */
+  --medium-purple: #9E95B7;  /* Medium purple for hover states */
+  --darker-purple: #7D6E96;  /* Darker purple for text and links */
+  --darkest-purple: #4A3A69; /* Darkest purple for emphasis */
+}
+
 /* Overall style improvements */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -29,24 +37,24 @@ body {
 }
 
 .greedy-nav a {
-  color: #BDB5D5;
+  color: var(--darker-purple);
 }
 
 .greedy-nav a:hover {
-  color: #9E95B7;
+  color: var(--darkest-purple);
 }
 
 .greedy-nav .visible-links a:before {
   height: 2px;
-  background: #BDB5D5;
+  background: var(--light-purple);
 }
 
-/* Override ALL links to use purple color */
+/* Override ALL links to use darker purple color */
 a, a:visited, .pagination--pager, 
 .pagination li a, .toc a, 
 .nav__list a, .nav__sub-title a,
 .sidebar a, .author__urls a {
-  color: #BDB5D5 !important;
+  color: var(--darker-purple) !important;
 }
 
 /* Override hover states for ALL links */
@@ -54,31 +62,31 @@ a:hover, .pagination--pager:hover,
 .pagination li a:hover, .toc a:hover,
 .nav__list a:hover, .nav__sub-title a:hover,
 .sidebar a:hover, .author__urls a:hover {
-  color: #9E95B7 !important;
+  color: var(--darkest-purple) !important;
 }
 
 /* Override buttons */
 .btn--primary, .btn--info, 
 .btn--small, .btn--medium,
 .btn--large, .btn--x-large {
-  background-color: #BDB5D5 !important;
+  background-color: var(--darker-purple) !important;
 }
 
 .btn--primary:hover, .btn--info:hover,
 .btn--small:hover, .btn--medium:hover, 
 .btn--large:hover, .btn--x-large:hover {
-  background-color: #9E95B7 !important;
+  background-color: var(--darkest-purple) !important;
 }
 
 /* Override pagination active state */
 .pagination li a.current {
-  background-color: #BDB5D5 !important;
+  background-color: var(--darker-purple) !important;
 }
 
 /* Override active navigation elements */
 .greedy-nav .visible-links a:before,
 .nav__list .active {
-  background-color: #BDB5D5 !important;
+  background-color: var(--darker-purple) !important;
 }
 
 /* Sidebar improvements */
@@ -91,6 +99,7 @@ a:hover, .pagination--pager:hover,
 .author__name {
   font-size: 1.3em;
   margin-top: 10px;
+  color: var(--darker-purple);
 }
 
 .author__bio {
@@ -148,7 +157,7 @@ h2 {
 }
 
 .research-item h2 {
-  color: #BDB5D5;
+  color: var(--darker-purple);
   font-size: 1.5em;
 }
 
@@ -197,36 +206,38 @@ a {
 }
 
 /* Override any page-specific purple coloring */
-.page-title, .name-heading, .research-card-header, .filter-btn.active, 
-.research-area h4, .related-publications h3, .research-card-header, 
-.profile-link i, .contact-icon, .publication-item, .research-area {
-  color: #BDB5D5 !important;
+.page-title, .name-heading, .filter-btn.active, 
+.research-area h4, .related-publications h3, 
+.profile-link i, .contact-icon {
+  color: var(--darker-purple) !important;
 }
 
-.research-card-header, .filter-btn.active {
-  background-color: #BDB5D5 !important;
-  border-color: #BDB5D5 !important;
+/* Use light purple for backgrounds and decorative elements */
+.research-card-header, .filter-btn.active, 
+.research-item-header {
+  background-color: var(--light-purple) !important;
+  border-color: var(--light-purple) !important;
 }
 
-.research-card-header h2 {
-  color: white !important;
+.research-card-header h2, .research-item-header h2 {
+  color: var(--darkest-purple) !important;
 }
 
 .publication-item, .research-area {
-  border-left-color: #BDB5D5 !important;
+  border-left-color: var(--light-purple) !important;
 } 
 
 /* Override TOC and navigation elements */
 .toc .nav__title {
-  background-color: #BDB5D5 !important;
+  background-color: var(--darker-purple) !important;
 }
 
 .nav__list .active {
-  background-color: #BDB5D5 !important;
+  background-color: var(--darker-purple) !important;
 }
 
 /* Override any remaining blue elements */
 .notice--info, .notice--primary {
   background-color: #f5f0f5 !important;
-  border-left-color: #BDB5D5 !important;
+  border-left-color: var(--light-purple) !important;
 } 

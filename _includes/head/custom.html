@@ -37,22 +37,40 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-  /* Override any remaining blue colors with lighter purple */
+  /* Define purple spectrum variables */
+  :root {
+    --light-purple: #BDB5D5;   /* Light purple for backgrounds and decorative elements */
+    --medium-purple: #9E95B7;  /* Medium purple for hover states */
+    --darker-purple: #7D6E96;  /* Darker purple for text and links */
+    --darkest-purple: #4A3A69; /* Darkest purple for emphasis */
+  }
+
+  /* Override any remaining blue colors with darker purple for text elements */
   a, a:link, a:visited {
-    color: #BDB5D5 !important;
+    color: var(--darker-purple) !important;
   }
   
   a:hover {
-    color: #9E95B7 !important;
+    color: var(--darkest-purple) !important;
   }
   
   .btn, .pagination li a.current, .page__footer a, 
   .nav__list .active, button, .toc .nav__title {
-    background-color: #BDB5D5 !important;
+    background-color: var(--darker-purple) !important;
   }
   
   .btn:hover, button:hover {
-    background-color: #9E95B7 !important;
+    background-color: var(--darkest-purple) !important;
+  }
+  
+  /* Ensure headings use darker purple */
+  .page-title, .name-heading, h1, h2, h3 {
+    color: var(--darker-purple) !important;
+  }
+  
+  /* Use light purple for decorative backgrounds */
+  .research-item-header, .research-card-header {
+    background-color: var(--light-purple) !important;
   }
 </style>
 

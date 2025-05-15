@@ -2,13 +2,13 @@
    Custom Variables Override
    ========================================================================== */
 
-/* Override default theme colors with lighter purple */
-$primary-color              : #BDB5D5;
-$info-color                 : #BDB5D5;
+/* Override default theme colors with purple spectrum */
+$primary-color              : #7D6E96; /* Darker purple for text elements */
+$info-color                 : #7D6E96;
 
 /* Override link colors */
-$link-color                 : #BDB5D5;
-$link-color-hover           : #9E95B7; /* Slightly darker shade for hover */
-$link-color-visited         : #D0C9E3; /* Slightly lighter shade for visited */
-$masthead-link-color        : #BDB5D5;
-$masthead-link-color-hover  : #9E95B7; /* Slightly darker shade for hover */ 
+$link-color                 : #7D6E96; /* Darker purple for better readability */
+$link-color-hover           : #4A3A69; /* Darkest purple for hover */
+$link-color-visited         : #9E95B7; /* Medium purple for visited */
+$masthead-link-color        : #7D6E96;
+$masthead-link-color-hover  : #4A3A69; 
