@@ -41,42 +41,42 @@ redirect_from:
     <h2><span class="section-icon">📰</span> Recent News</h2>
     <ul class="news-list">
       <li class="news-item">
-        <span class="news-date">April 2025</span>
+        <span class="news-date">Apr 2025</span>
         <div class="news-content">
           Yashar gave a talk in Profound Autism Summit "<strong>Predicting High-Risk Behaviors in Individuals with Profound Autism Using Sleep and Other Environmental Factors</strong>" <a href="https://behaviorlive.com/events/predicting-high-risk-behaviors-in-individuals-with-profound-autism-using-sleep-an">presentation link</a>
         </div>
       </li>
       
       <li class="news-item">
-        <span class="news-date">February 2025</span>
+        <span class="news-date">Feb 2025</span>
         <div class="news-content">
           Our paper titled "<strong>Feasibility of Assessing Cognitive Impairment via Distributed Camera Network and Privacy‐Preserving Edge Computing</strong>" has been published in <strong>Alzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring</strong>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11848627/">Read paper</a>
         </div>
       </li>
       
       <li class="news-item">
-        <span class="news-date">February 2025</span>
+        <span class="news-date">Feb 2025</span>
         <div class="news-content">
           Yashar gave a talk in CTSA Lunch and Learn Series on "<strong>Can Sleep Architecture and Behavior Patterns Predict Next-Day Challenging Behavior in Autism?</strong>"
         </div>
       </li>
       
       <li class="news-item">
-        <span class="news-date">January 2025</span>
+        <span class="news-date">Jan 2025</span>
         <div class="news-content">
           Our paper titled "<strong>From Motion to Emotion: Exploring Challenging Behaviors in Autism Spectrum Disorder Through Analysis of Wearable Physiology and Movement</strong>" has been published in <strong>Physiological Measurements</strong>. <a href="https://iopscience.iop.org/article/10.1088/1361-6579/ada51b/meta">Read paper</a>
         </div>
       </li>
       
       <li class="news-item">
-        <span class="news-date">October 2024</span>
+        <span class="news-date">Oct 2024</span>
         <div class="news-content">
           Our paper titled "<strong>Off-body Sleep Analysis for Predicting Adverse Behavior in Individuals with Autism Spectrum Disorder</strong>" has been published in <strong>IEEE Journal of Biomedical and Health Informatics</strong>. <a href="https://ieeexplore.ieee.org/abstract/document/10669162">Read paper</a>
         </div>
       </li>
       
       <li class="news-item">
-        <span class="news-date">July 2024</span>
+        <span class="news-date">Jul 2024</span>
         <div class="news-content">
           Yashar has been awarded the <strong>Thrasher Research Fund Early Career Award</strong> for the project titled "<strong>Enhancing Behavioral Understandings and Interventions in Children with Autism Spectrum Disorder using Artificial Intelligence.</strong>" <a href="https://www.thrasherresearch.org/grant/02384?lang=eng">More details</a>
         </div>

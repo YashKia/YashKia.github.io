@@ -19,7 +19,7 @@ author_profile: true
     <div class="talk-item">
       <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
       <p class="talk-metadata">
-        <strong>{{ post.type }}</strong> at {{ post.venue }}, {{ post.location }} | {{ post.date | date: "%B %Y" }}
+        <strong>{{ post.type }}</strong> at {{ post.venue }}, {{ post.location }} | {{ post.date | date: "%b %Y" }}
       </p>
       
       {{ post.content | markdownify }}
