@@ -88,8 +88,26 @@
   }
 </style>
 
+<!-- Favicons and App Icons -->
+<link rel="icon" type="image/png" href="{{ base_path }}/images/site-logo.png">
+<link rel="apple-touch-icon" href="{{ base_path }}/images/site-logo.png">
+
 <!-- Google Search Console verification -->
 <meta name="google-site-verification" content="YourVerificationCodeHere">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ site.url }}/images/site-logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta property="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta property="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="twitter:image" content="{{ site.url }}/images/site-logo.png">
 
 <!-- Schema.org markup for Google -->
 <script type="application/ld+json">
@@ -97,18 +115,46 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Yashar Kiarashi",
+  "honorificPrefix": "Dr.",
   "url": "https://yashkia.github.io",
-  "image": "https://yashkia.github.io/images/Logo.png",
+  "image": "https://yashkia.github.io/images/site-logo.png",
+  "logo": "https://yashkia.github.io/images/site-logo.png",
   "jobTitle": "Postdoctoral Researcher",
+  "description": "Researcher in AI-driven Healthcare Technology and Biomedical Informatics",
   "worksFor": {
     "@type": "Organization",
-    "name": "Emory University"
+    "name": "Emory University",
+    "url": "https://www.emory.edu"
+  },
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "Georgia Institute of Technology"
   },
   "sameAs": [
     "https://scholar.google.com/citations?user=1WWKzTEAAAAJ&hl=en&authuser=1",
     "https://github.com/YashKia",
-    "https://www.linkedin.com/in/yashar-kiarashinejad/"
+    "https://www.linkedin.com/in/yashar-kiarashinejad/",
+    "https://orcid.org/0009-0004-4903-6298",
+    "https://www.ncbi.nlm.nih.gov/myncbi/yashar.kiarashinejad.1/bibliography/public/"
   ]
+}
+</script>
+
+<!-- WebSite Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Dr. Yashar Kiarashi",
+  "url": "https://yashkia.github.io",
+  "description": "Researcher in AI-driven Healthcare Technology and Biomedical Informatics",
+  "image": "https://yashkia.github.io/images/site-logo.png",
+  "logo": "https://yashkia.github.io/images/site-logo.png",
+  "author": {
+    "@type": "Person",
+    "name": "Yashar Kiarashi",
+    "url": "https://yashkia.github.io"
+  }
 }
 </script>
 
