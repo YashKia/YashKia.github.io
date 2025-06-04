@@ -30,7 +30,7 @@ redirect_from:
       
       <div class="research-area">
         <h4><span class="area-icon">📊</span> AI-Driven Pattern Recognition for Health Monitoring</h4>
-        <p>Building on my PhD research in knowledge discovery at Georgia Tech, I develop interpretable machine learning models for biomedical applications that can extract valuable insights from complex physiological data.</p>
+        <p>Building on my PhD research in knowledge discovery in nanophotonics at Georgia Tech, I develop interpretable machine learning models for biomedical applications that can extract valuable insights from complex physiological data.</p>
       </div>
     </div>
 
