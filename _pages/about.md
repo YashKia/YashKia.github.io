@@ -88,6 +88,13 @@ redirect_from:
           Our paper titled "<strong>Off-body Sleep Analysis for Predicting Adverse Behavior in Individuals with Autism Spectrum Disorder</strong>" has been published in <strong>IEEE Journal of Biomedical and Health Informatics</strong>. <a href="https://ieeexplore.ieee.org/abstract/document/10669162">Read paper</a>
         </div>
       </li>
+
+      <li class="news-item">
+        <span class="news-date">Sep 2024</span>
+        <div class="news-content">
+          Drs. Yashar Kiarashi, Gari Clifford, and Allan Levey received a grant of <strong>$500,000</strong> for a research award titled "<strong>AI-Driven Sleep Study on Links Between Sleep and Neurodegeneration</strong>" from the Alzheimer's Association, The Michael J. Fox Foundation for Parkinson's Research, and CurePSP. In collaboration with Drs. James Lah, Amy Rodriguez, Donald Bliwise, and Lenora Higginbotham, NextSense in-ear EEG will be deployed for multi-night, at-home recordings in at-risk populations and to develop AI-driven analysis that identifies sleep-driven features associated with neurodegeneration biomarkers.
+        </div>
+      </li>
       
       <li class="news-item">
         <span class="news-date">Jul 2024</span>
